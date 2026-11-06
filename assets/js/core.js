@@ -7,9 +7,9 @@ const today = () => new Date().toISOString().slice(0, 10);
 const PASS_LESSON = 80;
 
 // Teaching order: the sequence a student walks through
-const ORDER = ["o1","o2","o3","h1","f1","f2","f11","f3","f4","f5","f6","f7","f8","f9","f10","f12","g1","g2","g3","h2",
-  "r1","r1b","r2","r2b","r3","r3b","r4","r4b","r4c","r5","r5b","r5c","r6","r6b","r7","r7b","r7c","r7d","r8","r8b","r9","r10","r10b","r11","r11b","r12","r12b","r12c",
-  "r13","r13b","r14","r15","r15b","r15c","r16","r16b","r17","r17b","r18","h3","s3","s1","s2","s4","s6","s5","s7","b1","b2","b3","b4","b5","a1","a2","c1","c3","c4","c2"];
+const ORDER = ["o1","o2","o3","h1","f1","f2","f11","f3","f4","f5","f6","v1","f7","f8","f9","sp1","f10","fo2","f12","v2","v3","g1","g2","g3","h2",
+  "r1","r1b","r2","r2b","r3","r3b","r4","r4b","r4c","r5","r5b","r5c","r6","r6b","r7","r7b","r7c","r7d","r8","r8b","r9","fo1","r10","r10b","r11","r11b","r12","r12b","r12c",
+  "r13","r13b","r14","r15","r15b","r15c","r16","r16b","r17","r17b","r18","h3","v4","s3","s1","s2","s4","s6","s5","s7","biz1","b1","b2","b3","b4","b5","b6","a1","a2","c1","c3","c4","c2"];
 L.sort((a, b) => ORDER.indexOf(a.id) - ORDER.indexOf(b.id));
 const LBY = Object.fromEntries(L.map(l => [l.id, l]));
 const UBY = Object.fromEntries(UNITS.map(u => [u.id, u]));
@@ -32,12 +32,12 @@ const TRACKS = {
         { id: "theory", name: "Theory", type: "mcq", n: 45, mins: 38, pass: 60, mix: { 1: .3, 2: .55, 3: .15 }, note: "45 questions in 38 minutes, as in the CMS Americas Certified theory section." },
         { id: "tasting", name: "Blind tasting", type: "blind", n: 4, mix: "2w2r", mins: 45, pass: 60, pool: "cert", note: "4 wines (2 white, 2 red) in 45 minutes from the Certified examinable list." },
         { id: "service", name: "Service practical", type: "practical", mins: 16, pass: 60, level: 2, note: "About 16 minutes: a service sequence, temperatures, pairing, a wine list and business math." }] },
-    { id: "cms3", name: "Advanced Sommelier", pin: "A", lessons: ["r4b", "r4c", "r5c", "r6b", "r7c", "r7d", "r10b", "r11b", "r12c", "r13b", "r15b", "r15c", "r16b", "r17b", "r3b", "r5b", "r7b", "r8b", "r12b", "r18", "f12", "s7", "b4", "b5", "c1", "c4"],
+    { id: "cms3", name: "Advanced Sommelier", pin: "A", lessons: ["v1", "v2", "sp1", "fo1", "fo2", "b6", "r4b", "r4c", "r5c", "r6b", "r7c", "r7d", "r10b", "r11b", "r12c", "r13b", "r15b", "r15c", "r16b", "r17b", "r3b", "r5b", "r7b", "r8b", "r12b", "r18", "f12", "s7", "b4", "b5", "c1", "c4"],
       comps: [
         { id: "theory", name: "Theory", type: "mcq", n: 60, mins: 60, pass: 60, mix: { 1: .1, 2: .6, 3: .3 }, note: "60 questions in one hour at Certified and Advanced difficulty." },
         { id: "tasting", name: "Verbal six", type: "blind", n: 6, mix: "3w3r", mins: 25, pass: 60, pool: "all", region: true, note: "6 wines in 25 minutes from the wider Advanced pool; region is scored." },
         { id: "service", name: "Service & business practical", type: "practical", mins: 30, pass: 60, level: 3, note: "Two service sequences, more math, wine list, pairing and temperatures." }] },
-    { id: "cms4", name: "Master Sommelier", pin: "MS", lessons: ["c3", "a2", "c2"],
+    { id: "cms4", name: "Master Sommelier", pin: "MS", lessons: ["v3", "v4", "biz1", "c3", "a2", "c2"],
       comps: [
         { id: "theory", name: "Theory", type: "mcq", n: 75, mins: 60, pass: 75, mix: { 2: .45, 3: .55 }, note: "75 hard questions in an hour at the 75% Master standard." },
         { id: "tasting", name: "Verbal six", type: "blind", n: 6, mix: "3w3r", mins: 25, pass: 75, pool: "all", region: true, noise: true, note: "3 white, 3 red in 25 minutes with realistic bottle variation; 75% to pass." },
@@ -51,12 +51,12 @@ const TRACKS = {
         { id: "theory", name: "Multiple choice", type: "mcq", n: 50, mins: 45, pass: 55, mix: { 1: .35, 2: .6, 3: .05 }, note: "50 multiple-choice questions, part of the theory paper." },
         { id: "sa", name: "Short written answers", type: "sa", n: 4, mins: 75, pass: 55, note: "Four 25-mark questions, then mark yourself against the marking points." },
         { id: "sat", name: "SAT tasting", type: "sat", n: 2, mins: 30, pass: 55, note: "Two wines: predict the SAT structure and aromas. Grid real wine in the Lab too." }] },
-    { id: "w4", name: "Level 4 Diploma", pin: "D", lessons: ["r4b", "r4c", "r5c", "r6b", "r7c", "r7d", "r10b", "r11b", "r12c", "r13b", "r15b", "r15c", "r16b", "r17b", "r3b", "r5b", "r7b", "r8b", "r12b", "r18", "s6", "s5", "s7", "b1", "c4", "c2"],
+    { id: "w4", name: "Level 4 Diploma", pin: "D", lessons: ["v1", "v2", "v3", "sp1", "fo1", "fo2", "biz1", "r4b", "r4c", "r5c", "r6b", "r7c", "r7d", "r10b", "r11b", "r12c", "r13b", "r15b", "r15c", "r16b", "r17b", "r3b", "r5b", "r7b", "r8b", "r12b", "r18", "s6", "s5", "s7", "b1", "c4", "c2"],
       comps: [
         { id: "theory", name: "Theory", type: "mcq", n: 60, mins: 60, pass: 55, mix: { 1: .1, 2: .55, 3: .35 }, note: "60 questions at Diploma difficulty." },
         { id: "essay", name: "Essay", type: "essay", mins: 45, pass: 55, note: "One essay in 45 minutes, self-assessed on a five-criterion rubric." },
         { id: "tasting", name: "12-wine paper", type: "blind", n: 12, mix: "6w6r", mins: 90, pass: 55, pool: "all", region: true, note: "12 wines in 90 minutes, as in a D3 tasting paper." }] },
-    { id: "mw", name: "Master of Wine (capstone)", pin: "MW", lessons: ["c1"],
+    { id: "mw", name: "Master of Wine (capstone)", pin: "MW", lessons: ["c1", "v4", "b6"],
       comps: [
         { id: "tasting", name: "12-wine practical", type: "blind", n: 12, mix: "6w6r", mins: 135, pass: 65, pool: "all", region: true, noise: true, note: "12 wines in 2h15m with realistic variation. The real MW standard is set by examiners; the academy uses 65%." },
         { id: "essay", name: "Theory essay", type: "essay", mins: 60, pass: 65, note: "One essay in an hour, MW-style." }] }
