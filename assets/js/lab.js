@@ -15,6 +15,7 @@ function viewLab() {
 }
 // --- virtual blind
 function blindSet(n, mix, pool) {
+  if (pool === "sfs") return shuffle(WINES.filter(w => w.style)).slice(0, n);
   const pl = WINES.filter(w => pool === "all" || w.lvl === "cert");
   let ws = [], wr = [];
   const [nw, nr] = mix === "mixed" ? (Math.random() < .5 ? [1, 0] : [0, 1]) : mix === "2w2r" ? [2, 2] : mix === "3w3r" ? [3, 3] : mix === "6w6r" ? [6, 6] : [Math.ceil(n / 2), Math.floor(n / 2)];
@@ -36,13 +37,14 @@ function describe(v) {
   const gas = !red && v.climate === "Cool" && v.oak === "none" && Math.random() < .5 ? ", a few bubbles of gas" : ", no gas";
   const earthW = red ? pick(["forest floor", "potting soil", "dried leaves", "mushroom", "dusty earth"]) : pick(["a faint mushroom note", "dried hay and earth", "a dusty, earthy undertone"]);
   const oak = v.oak.startsWith("none") ? "No new oak" + (v.oak.includes("old") ? "; possibly older wood" : "") : v.oak.includes("old") || v.oak.includes("large") ? "No new oak; old or large neutral wood" : "New oak: " + v.oak + (v.oak.includes("American") ? " (dill, coconut, vanilla)" : " (toast, vanilla, baking spice)");
+  const sfsGas = v.sightx ? ", " + v.sightx : null;
   const tears = v.alc >= 4 ? "medium-plus to heavy tearing" : v.alc <= 2 ? "light tearing" : "medium tearing";
-  return { sight: `Clear, ${v.inten.toLowerCase()} intensity, ${v.hue.toLowerCase()} with ${v.sec} hues${rim}, ${tears}${gas}.`,
+  return { sight: `Clear, ${v.inten.toLowerCase()} intensity, ${v.hue.toLowerCase()} with ${v.sec} hues${rim}, ${tears}${sfsGas || gas}.`,
     nose: `Clean, ${nint} intensity, ${ageStage}. Fruit: ${v.fr.join(", ")} (${v.cond}). Non-fruit: ${v.nf.join(", ")}. Earth: ${v.earth ? earthW : "none"}. Mineral: ${v.mineral === "none" ? "none" : v.mineral}. ${oak}.`,
-    palate: `${SWEET7[v.sweet]}. Acid ${SCALE5[v.acid - 1].toLowerCase()}, alcohol ${SCALE5[v.alc - 1].toLowerCase()}, body ${BODY5[v.body - 1].toLowerCase()}${red ? `, tannin ${SCALE5[v.tannin - 1].toLowerCase()} and ${v.ttex}` : `, phenolic bitterness: ${v.bitter ? "yes" : "no"}`}, ${v.texture || (red ? "" : "")} texture. Fruit confirms the nose. ${v.age === "1-3" ? "Medium-plus" : "Long"} finish, ${v.lvl === "adv" || v.age !== "1-3" ? "medium-plus to high" : "medium"} complexity.`.replace(", , texture", "").replace(",  texture", "").replace(", undefined texture", "") };
+    palate: `${SWEET7[v.sweet]}. Acid ${SCALE5[v.acid - 1].toLowerCase()}, alcohol ${SCALE5[v.alc - 1].toLowerCase()}, body ${BODY5[v.body - 1].toLowerCase()}${red ? `, tannin ${SCALE5[v.tannin - 1].toLowerCase()} and ${v.ttex}` : `, phenolic bitterness: ${v.bitter ? "yes" : "no"}`}, ${v.texture || (red ? "" : "")} texture. Fruit confirms the nose. ${v.age === "1-3" ? "Medium-plus" : "Long"} finish, ${v.lvl === "adv" || v.age !== "1-3" ? "medium-plus to high" : "medium"} complexity.${v.palx ? " " + v.palx : ""}`.replace(", , texture", "").replace(",  texture", "").replace(", undefined texture", "") };
 }
 function grapeOptions(w) {
-  const same = [...new Set(WINES.filter(x => x.c === w.c).map(x => x.grape))];
+  const same = [...new Set(WINES.filter(x => w.style ? !!x.style : x.c === w.c).map(x => x.grape))];
   const partners = PAIRS.filter(p => p[1] === w.id || p[2] === w.id).map(p => WBY[p[1] === w.id ? p[2] : p[1]].grape).filter(g => g !== w.grape && same.includes(g));
   const rest = shuffle(same.filter(g => g !== w.grape && !partners.includes(g)));
   return shuffle([w.grape, ...[...new Set(partners)].slice(0, 3), ...rest].slice(0, 6));
@@ -50,7 +52,7 @@ function grapeOptions(w) {
 const COUNTRIES = [...new Set(WINES.map(w => w.country))].sort();
 function newFlight(opts) {
   const set = blindSet(opts.n, opts.mix, opts.pool);
-  return { opts, wines: set.map(w => { const v = variant(w, opts.noise); return { w, v, d: describe(v), gopts: grapeOptions(w), ropts: opts.region ? shuffle([w.region, ...shuffle(WINES.filter(x => x.c === w.c && x.region !== w.region).map(x => x.region)).slice(0, 5)]) : null, ans: {}, scored: null }; }), idx: 0, endAt: opts.mins ? Date.now() + opts.mins * 6e4 : null };
+  return { opts, wines: set.map(w => { const v = variant(w, opts.noise); return { w, v, d: describe(v), gopts: grapeOptions(w), ropts: opts.region ? shuffle([w.region, ...shuffle(WINES.filter(x => (w.style ? !!x.style : x.c === w.c) && x.region !== w.region).map(x => x.region)).slice(0, 5)]) : null, ans: {}, scored: null }; }), idx: 0, endAt: opts.mins ? Date.now() + opts.mins * 6e4 : null };
 }
 function labBlind() {
   if (!LAB.flight) {
@@ -61,6 +63,7 @@ function labBlind() {
       <button class="btn" data-act="flight" data-arg="4:2w2r:cert:45">Certified flight: 4 wines, 45 min</button>
       <button class="btn" data-act="flight" data-arg="6:3w3r:all:25:region">Verbal six: 6 wines, 25 min, region scored</button>
       <button class="btn" data-act="flight" data-arg="6:3w3r:all:0:region:noise">Realistic six, untimed (wider pool, bottle variation)</button>
+      <button class="btn" data-act="flight" data-arg="4:sfs:sfs:0:region">Sparkling, sweet & fortified: 4 wines, region scored</button>
     </div></div>
     <div class="card"><h3>Your toughest grapes</h3>${tough.length ? tough.map(([g, r, n]) => `<div style="margin:8px 0"><div class="row small" style="justify-content:space-between"><b>${esc(g)}</b><span class="muted">${Math.round(r * 100)}% correct · ${n} seen</span></div><div class="bar v"><i style="width:${Math.round(r * 100)}%"></i></div></div>`).join("") : `<p class="small muted">Taste a few flights and the grapes you misidentify most will show up here.</p>`}</div></div>`;
   }

@@ -7,6 +7,7 @@ function nightWines() {
   if (NT.type === "italy") return ["barolo", "sang", "amar", "pgrig"];
   if (NT.type === "riesling") return ["rkab", "clare", "vouv", "alb"];
   if (NT.type === "bordeaux") return ["hmed", "pom", "napcab", "chin"];
+  if (NT.type === "sfs") return ["champ", "prosec", "saut", "lbv"];
   return NT.custom;
 }
 function encodeNight(order, host, date) { return encodeURIComponent([order.join("."), host, date].join("|")); }
@@ -19,7 +20,7 @@ function buildMessage(ids, url) {
 }
 function viewNight() {
   const ids = nightWines(), n = ids.length;
-  const types = [["pair", "Confusion pair"], ["cert", "Certified flight (2 white, 2 red)"], ["italy", "Italy night"], ["bordeaux", "Cabernet family"], ["riesling", "High-acid whites"], ["custom", "Build your own"]];
+  const types = [["pair", "Confusion pair"], ["cert", "Certified flight (2 white, 2 red)"], ["italy", "Italy night"], ["bordeaux", "Cabernet family"], ["riesling", "High-acid whites"], ["sfs", "Bubbles & stickies"], ["custom", "Build your own"]];
   const ready = n >= 2 && n <= 8;
   let msg = "", order = null;
   if (ready) { order = NT.built && NT.built.key === ids.join() ? NT.built.order : shuffle(ids); NT.built = { key: ids.join(), order }; msg = buildMessage(ids, hostURL(order)); }
