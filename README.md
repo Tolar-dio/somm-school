@@ -7,8 +7,8 @@ A free, self-paced online sommelier school modeled on the two major programs:
 
 ## What's inside
 
-- **64 lessons** across 15 units: history and wine law, viticulture, winemaking, grapes, every major region (with in-depth Bordeaux, Burgundy, Champagne, Italian DOCGs and Spain), service, business, spirits, beer, sake, and capstone exam craft. Each lesson has a CMS lens, a WSET lens, key terms and an exam (80% to pass).
-- **410 exam questions** feeding timed mock exams at the real formats and pass marks, with prerequisites: each level's exam unlocks only after the seal before it.
+- **78 lessons** across 15 units: history and wine law, viticulture, winemaking, grapes, every major region (with deep dives on Bordeaux, Burgundy, Champagne, the Loire, Alsace, the Rhône, Piedmont, Tuscany, Northeast and Southern Italy, Spain, Portugal, Germany, Austria, California, Australia, New Zealand, Argentina, Chile and South Africa), service, business, spirits, beer, sake, and capstone exam craft. Each lesson has a CMS lens, a WSET lens, key terms and an exam (80% to pass).
+- **511 exam questions** feeding timed mock exams at the real formats and pass marks, with prerequisites: each level's exam unlocks only after the seal before it.
 - **Tasting Lab**: virtual blind flights, CMS deductive grid and WSET SAT forms for real wines with benchmark comparison, profile drills, 36 classic wine profiles, a 20-week confusion-pair rotation, and a tasting journal.
 - **Tasting Night**: pick a flight, enter a friend's number, and your Messages app opens with a prewritten text containing a shopping list and a private host card (setup steps and answer key). Nothing is sent or stored by the site.
 - **Service Floor**: service sequences, serving temperatures, business math generator, wine-list correction.
