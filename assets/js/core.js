@@ -77,10 +77,10 @@ const ELECTIVES = [
 ];
 
 // ---------- state ----------
-const KEY = "tastevin-academy-v2";
+const KEY = "vitis-mundi-academy-v1";
 const FRESH = () => ({ v: 2, start: today(), track: "floor", done: {}, quiz: {}, xp: 0, days: {}, cards: {}, journal: [], comps: {}, pins: {}, hist: [], vb: {}, nights: [], plan: null, drills: { labels: 0, match: 0 } });
 let S = FRESH();
-function load() { try { const v = localStorage.getItem(KEY) || localStorage.getItem("tastevin"); if (v) S = Object.assign(FRESH(), JSON.parse(v)); } catch (e) {} }
+function load() { try { const v = localStorage.getItem(KEY) || localStorage.getItem("tastevin-academy-v2") || localStorage.getItem("tastevin"); if (v) S = Object.assign(FRESH(), JSON.parse(v)); } catch (e) {} }
 function save() { try { if (S.journal.length > 300) S.journal = S.journal.slice(-300); if (S.hist.length > 200) S.hist = S.hist.slice(-200); localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
 function touchDay() { S.days[today()] = 1; }
 function streak() { let n = 0; const d = new Date(); if (!S.days[d.toISOString().slice(0, 10)]) d.setDate(d.getDate() - 1); for (;;) { const k = d.toISOString().slice(0, 10); if (S.days[k]) { n++; d.setDate(d.getDate() - 1); } else break; } return n; }

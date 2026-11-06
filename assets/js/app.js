@@ -136,7 +136,7 @@ document.addEventListener("change", e => {
 function rail() {
   const theme = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
   $("#rail").innerHTML = `<a class="brand" href="#campus">${MARK}<span><b>Vitis Mundi<br>Academy</b><i>a school for sommeliers</i></span></a>
-  <nav class="nav">${NAV.map(([k, n], i) => `<a href="#${k}" data-v="${k}"><span class="k">${String(i + 1).padStart(2, "0")}</span>${n}</a>`).join("")}</nav>
+  <nav class="nav">${NAV.map(([k, n], i) => `<a href="#${k}" data-v="${k}"><span class="k">${String(i + 1).padStart(2, "0")}</span>${n}</a>`).join("")}<a class="atlas" href="https://vitismundi.app/" title="The Vitis Mundi atlas: every wine region on a 3D globe"><span class="k">&#8599;</span>The Atlas</a></nav>
   <div class="railfoot"><button data-act="theme">${theme === "dark" ? "Switch to label-paper light" : "Switch to cellar dark"}</button><div class="row" style="gap:6px"><button data-act="backup">Back up progress</button><button data-act="restore">Restore</button></div><input type="file" id="restorefile" accept="application/json" hidden>
   <div>Progress lives in this browser. Back it up to move devices.</div><div>Floor track models the Court of Master Sommeliers; Analyst track models WSET and the MW. Independent and unaffiliated.</div></div>`;
   route();

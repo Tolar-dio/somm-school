@@ -1,6 +1,6 @@
 # Vitis Mundi Academy
 
-The school half of [Vitis Mundi](https://vitismundi.app).
+The school half of [Vitis Mundi](https://vitismundi.app), live at **https://vitismundi.app/academy/**. This repo is the source; `pipeline/frontend/sync_academy.py` in Tolar-dio/wine-world copies it into that site.
 
 A free, self-paced online sommelier school modeled on the two major programs:
 

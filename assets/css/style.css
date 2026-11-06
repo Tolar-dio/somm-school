@@ -42,6 +42,8 @@ button{font:inherit;color:inherit}
 .rail{position:sticky;top:0;height:100vh;padding:26px 16px 20px;padding-left:max(16px,env(safe-area-inset-left));display:flex;flex-direction:column;gap:6px;border-right:1px solid var(--line);background:linear-gradient(180deg,var(--bg2),var(--bg))}
 .brand{display:flex;gap:12px;align-items:center;padding:0 8px 22px;text-decoration:none;color:var(--ink)}
 .brand b{font-family:var(--f-display);font-weight:700;font-size:23px;line-height:1;letter-spacing:.2px;display:block}
+.nav a.atlas{margin-top:14px;border-top:1px solid var(--line);padding-top:14px;color:var(--gold)}
+.nav a.atlas .k{color:var(--gold)}
 .brand i{font-family:var(--f-display);font-style:italic;color:var(--gold);font-size:13px;display:block;margin-top:5px}
 .nav{display:flex;flex-direction:column;gap:1px}
 .nav a{display:grid;grid-template-columns:26px 1fr;align-items:center;padding:9px 10px;border-radius:var(--r);color:var(--ink2);text-decoration:none;font-size:15px;font-weight:500;border:1px solid transparent}
@@ -241,7 +243,7 @@ body.hosting .shell{grid-template-columns:1fr}
 @media (max-width:900px){
   .shell{grid-template-columns:1fr}
   .rail{position:sticky;top:0;height:auto;z-index:20;flex-direction:row;align-items:center;padding:10px 12px;overflow-x:auto;border-right:none;border-bottom:1px solid var(--line);padding-left:max(12px,env(safe-area-inset-left));padding-right:max(12px,env(safe-area-inset-right));background:var(--bg2)}
-  .brand{padding:0 6px 0 0}.brand i,.railfoot{display:none}.brand b{font-size:17px}
+  .nav a.atlas{margin:0;border-top:0;padding-top:9px}.brand{padding:0 6px 0 0}.brand i,.railfoot{display:none}.brand b{font-size:17px}
   .nav{flex-direction:row}.nav a{grid-template-columns:1fr;padding:7px 10px;font-size:14px;white-space:nowrap}.nav a .k{display:none}
   main{padding:26px max(16px,env(safe-area-inset-right)) 80px max(16px,env(safe-area-inset-left))}
   .stain{right:-34%;top:-30px;width:300px;opacity:.35}
