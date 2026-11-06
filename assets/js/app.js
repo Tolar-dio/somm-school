@@ -105,7 +105,7 @@ const ACT = {
   esmark() { record(Math.round(100 * EX.essay.scores.reduce((a, b) => a + b, 0) / (RUBRIC.length * 4))); route(); window.scrollTo(0, 0); },
   // settings
   theme() { const cur = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"); const nx = cur === "dark" ? "light" : "dark"; document.documentElement.dataset.theme = nx; try { localStorage.setItem("tv-theme", nx); } catch (e) {} rail(); },
-  backup() { const blob = new Blob([JSON.stringify(S, null, 1)], { type: "application/json" }); const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = `tastevin-progress-${today()}.json`; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500); toast("Progress file downloaded"); },
+  backup() { const blob = new Blob([JSON.stringify(S, null, 1)], { type: "application/json" }); const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = `vitis-mundi-academy-progress-${today()}.json`; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500); toast("Progress file downloaded"); },
   restore() { $("#restorefile").click(); }
 };
 
@@ -130,12 +130,12 @@ document.addEventListener("change", e => {
   if (t.dataset.in === "nhide") { NT.hide = t.checked; rerender(); }
   if (t.dataset.call) { const [id, i] = t.dataset.call.split(":").map(Number); const nt = S.nights.find(x => x.id === id); if (nt) { nt.calls[i] = t.value; save(); } }
   if (t.dataset.mark) { const [q, p, m] = t.dataset.mark.split(":").map(Number); EX.sa[q].marks[p][m] = t.checked; }
-  if (t.id === "restorefile" && t.files[0]) { const r = new FileReader(); r.onload = () => { try { const d = JSON.parse(r.result); if (!d || typeof d !== "object" || !("done" in d)) throw 0; S = Object.assign(FRESH(), d); save(); toast("Progress restored"); route(); } catch (err) { toast("That file isn't a Tastevin progress file"); } }; r.readAsText(t.files[0]); t.value = ""; }
+  if (t.id === "restorefile" && t.files[0]) { const r = new FileReader(); r.onload = () => { try { const d = JSON.parse(r.result); if (!d || typeof d !== "object" || !("done" in d)) throw 0; S = Object.assign(FRESH(), d); save(); toast("Progress restored"); route(); } catch (err) { toast("That file isn't a Vitis Mundi Academy progress file"); } }; r.readAsText(t.files[0]); t.value = ""; }
 });
 
 function rail() {
   const theme = document.documentElement.dataset.theme || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
-  $("#rail").innerHTML = `<a class="brand" href="#campus">${MARK}<span><b>Tastevin<br>Academy</b><i>a school for sommeliers</i></span></a>
+  $("#rail").innerHTML = `<a class="brand" href="#campus">${MARK}<span><b>Vitis Mundi<br>Academy</b><i>a school for sommeliers</i></span></a>
   <nav class="nav">${NAV.map(([k, n], i) => `<a href="#${k}" data-v="${k}"><span class="k">${String(i + 1).padStart(2, "0")}</span>${n}</a>`).join("")}</nav>
   <div class="railfoot"><button data-act="theme">${theme === "dark" ? "Switch to label-paper light" : "Switch to cellar dark"}</button><div class="row" style="gap:6px"><button data-act="backup">Back up progress</button><button data-act="restore">Restore</button></div><input type="file" id="restorefile" accept="application/json" hidden>
   <div>Progress lives in this browser. Back it up to move devices.</div><div>Floor track models the Court of Master Sommeliers; Analyst track models WSET and the MW. Independent and unaffiliated.</div></div>`;

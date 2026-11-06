@@ -1,4 +1,6 @@
-# Tastevin Academy
+# Vitis Mundi Academy
+
+The school half of [Vitis Mundi](https://vitismundi.app).
 
 A free, self-paced online sommelier school modeled on the two major programs:
 

@@ -6,16 +6,14 @@ function viewCampus() {
   const pr = PAIRS[wk % PAIRS.length];
   const seals = Object.values(TRACKS).flatMap(tr => tr.creds).map(cr => `<div class="seal ${S.pins[cr.id] ? "earned" : ""}" title="${esc(cr.name)}${S.pins[cr.id] ? " · earned " + S.pins[cr.id] : ""}">${cr.pin}</div>`).join("");
   const recent = S.hist.slice(-5).reverse().map(h => `<div class="row between small" style="padding:7px 0;border-bottom:1px solid var(--line)"><span>${esc(h.name)}</span><span class="pill ${h.pass ? "good" : "bad"}">${h.score}%</span></div>`).join("") || `<p class="muted small">No exams sat yet. Every mock runs on the real clock with the real pass mark.</p>`;
-  postHooks.push(startGlass);
   return `<div class="wrap">
-  <section class="hero">
+  <section class="hero">${STAIN}
     <div>
-      <div class="eyebrow">Tastevin Academy · ${t.name} track</div>
+      <div class="eyebrow">Vitis Mundi Academy · ${t.name} track</div>
       <div class="display">${S.xp ? "Back to the <em>cellar.</em>" : "Somm school, <em>uncorked.</em>"}</div>
       <p class="lede" style="margin-top:18px">A complete sommelier program modeled on the Court of Master Sommeliers and WSET: ${L.length} lessons, ${QS.length} exam questions, ${WINES.length} classic wine profiles, timed mock exams at the real pass marks, and a tasting-night planner for your study group.</p>
       <div class="row">${nl ? `<a class="btn pri" href="#lesson-${nl}">${S.done[ORDER[0]] ? "Continue" : "Begin"}: ${esc(LBY[nl].title)}</a>` : `<a class="btn pri" href="#exams">Sit the exam</a>`}<a class="btn" href="#night">Plan a tasting night</a></div>
     </div>
-    <figure class="glassview" style="margin:0"><canvas id="glasscv" width="880" height="880" aria-label="A glass of aged Brunello seen from above: garnet core fading to an orange rim"></canvas><figcaption>Garnet core, orange rim: about ten years old.</figcaption></figure>
   </section>
   <div class="stats"><div><div class="stat">${streak()}<small>Day streak</small></div></div><div><div class="stat">${S.xp.toLocaleString()}<small>Experience</small></div></div><div><div class="stat">${Object.keys(S.done).length}<small>Lessons passed</small></div></div><div><div class="stat">${due}<small>Cards due</small></div></div></div>
 
@@ -37,35 +35,8 @@ function viewCampus() {
   </div>`;
 }
 
-// ---------- the glass ----------
-let GLASS_RAF = null;
-function startGlass() {
-  const cv = $("#glasscv"); if (!cv) return; const g = cv.getContext("2d"); const W = cv.width, R = W * 0.42, cx = W / 2, cy = W / 2;
-  const still = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
-  cancelAnimationFrame(GLASS_RAF);
-  const draw = t => {
-    if (!document.body.contains(cv)) return;
-    const a = t / 5200, ox = Math.cos(a) * R * 0.05, oy = Math.sin(a) * R * 0.05;
-    g.clearRect(0, 0, W, W);
-    // stem shadow
-    const sh = g.createRadialGradient(cx + 20, cy + 30, R * 0.6, cx + 20, cy + 30, R * 1.15); sh.addColorStop(0, "rgba(0,0,0,.45)"); sh.addColorStop(1, "rgba(0,0,0,0)"); g.fillStyle = sh; g.beginPath(); g.arc(cx + 20, cy + 30, R * 1.15, 0, 7); g.fill();
-    // wine body
-    const wg = g.createRadialGradient(cx + ox, cy + oy, R * 0.05, cx, cy, R);
-    wg.addColorStop(0, "#3A0612"); wg.addColorStop(0.45, "#5E0F22"); wg.addColorStop(0.72, "#7E1F2C"); wg.addColorStop(0.88, "#A2442C"); wg.addColorStop(0.96, "#C77A42"); wg.addColorStop(1, "rgba(214,160,100,.55)");
-    g.fillStyle = wg; g.beginPath(); g.arc(cx, cy, R, 0, 7); g.fill();
-    // swirl sheen
-    g.save(); g.beginPath(); g.arc(cx, cy, R, 0, 7); g.clip();
-    for (let i = 0; i < 3; i++) { const ang = a * (1 + i * 0.3) + i * 2.1; g.strokeStyle = `rgba(255,190,170,${0.05 - i * 0.012})`; g.lineWidth = R * (0.18 - i * 0.04); g.beginPath(); g.arc(cx, cy, R * (0.55 + i * 0.13), ang, ang + 1.4); g.stroke(); }
-    const hl = g.createRadialGradient(cx - R * 0.35, cy - R * 0.4, 2, cx - R * 0.35, cy - R * 0.4, R * 0.55); hl.addColorStop(0, "rgba(255,235,220,.16)"); hl.addColorStop(1, "rgba(255,235,220,0)"); g.fillStyle = hl; g.fillRect(0, 0, W, W);
-    g.restore();
-    // glass rim
-    g.strokeStyle = "rgba(229,201,140,.55)"; g.lineWidth = 2.2; g.beginPath(); g.arc(cx, cy, R * 1.08, 0, 7); g.stroke();
-    g.strokeStyle = "rgba(255,255,255,.18)"; g.lineWidth = 5; g.beginPath(); g.arc(cx, cy, R * 1.08, Math.PI * 1.05, Math.PI * 1.55); g.stroke();
-    g.strokeStyle = "rgba(229,201,140,.18)"; g.lineWidth = 1; g.beginPath(); g.arc(cx, cy, R * 1.16, 0, 7); g.stroke();
-    if (!still) GLASS_RAF = requestAnimationFrame(draw);
-  };
-  draw(0); if (!still) GLASS_RAF = requestAnimationFrame(draw);
-}
+// ---------- the stain: the ring a glass of old Brunello leaves on the tablecloth ----------
+const STAIN = `<svg class="stain" viewBox="0 0 400 400" aria-hidden="true"><defs><radialGradient id="stg" cx="50%" cy="50%" r="50%"><stop offset="78%" stop-color="var(--garnet)" stop-opacity="0"/><stop offset="93%" stop-color="var(--garnet)" stop-opacity=".22"/><stop offset="97%" stop-color="#A2442C" stop-opacity=".5"/><stop offset="100%" stop-color="#A2442C" stop-opacity="0"/></radialGradient></defs><circle cx="200" cy="200" r="168" fill="url(#stg)"/><path d="M58 236a146 146 0 0 0 96 104" fill="none" stroke="#A2442C" stroke-opacity=".35" stroke-width="2.4" stroke-linecap="round"/><circle cx="214" cy="190" r="186" fill="none" stroke="var(--garnet)" stroke-opacity=".12" stroke-width="1.2" stroke-dasharray="60 22 140 30"/></svg>`;
 
 // ---------- study planner ----------
 function viewPlannerCard() {

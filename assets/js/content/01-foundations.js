@@ -18,7 +18,7 @@ const UNITS = [
 ];
 const L = [];
 
-L.push({id:"o1", unit:"O", title:"Welcome to Tastevin Academy", mins:12,
+L.push({id:"o1", unit:"O", title:"Welcome to Vitis Mundi Academy", mins:12,
 summary:"Why sommelier credentials exist, how the two big schools differ, and how this program copies them.",
 body:`
 <p>No government licenses sommeliers. There is no bar exam, no state board, no legal title. A "certified sommelier" is certified by a private organization that the industry has agreed to respect. So what you are buying when you pay for somm school is two things: a structured body of knowledge, and a credential that tells an employer you survived a known test. This academy gives you the first one completely and rehearses you for the second, so if you ever decide to pay for a single exam, you walk in already prepared.</p>

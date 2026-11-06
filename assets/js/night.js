@@ -66,7 +66,7 @@ function nightCard(nt) {
 function viewHost(code) {
   const N = decodeNight(code); if (!N) return `<div class="wrap read"><h1>That host link is broken.</h1><p class="lede">Ask your friend to send it again.</p></div>`;
   const ws = N.order.map(id => WBY[id]); const hasW = ws.some(w => w.c === "w"), hasR = ws.some(w => w.c === "r");
-  return `<div class="wrap read"><div class="eyebrow">Host card · Tastevin Academy</div><h1>You're hosting a <em>blind tasting.</em></h1>
+  return `<div class="wrap read"><div class="eyebrow">Host card · Vitis Mundi Academy</div><h1>You're hosting a <em>blind tasting.</em></h1>
   <p class="lede">${esc(N.host.charAt(0).toUpperCase() + N.host.slice(1))} is training for sommelier exams and asked you to pour ${ws.length} wines blind${N.date ? " on " + niceDate(N.date) : ""}. It takes about 20 minutes of prep. Here's everything.</p>
   <h2>1 · Buy the bottles</h2><p class="small muted">Any shop with a decent wine section can help; show them this list. The examples are suggestions, not requirements.</p>
   ${ws.slice().sort((a, b) => a.c.localeCompare(b.c)).map(w => `<div class="card" style="margin-bottom:10px"><div class="row between"><b>${esc(BUY[w.id][0])}</b><span class="pill gold">${esc(BUY[w.id][2])}</span></div><div class="small muted" style="margin-top:4px">Look for: ${esc(BUY[w.id][1])}</div></div>`).join("")}
@@ -85,5 +85,5 @@ function viewHost(code) {
   <p class="small" style="margin:6px 0 0"><b>What a good taster should notice:</b> ${esc(w.markers)}</p>
   <p class="small muted" style="margin:4px 0 0">Structure: acid ${SCALE5[w.acid - 1].toLowerCase()}, alcohol ${SCALE5[w.alc - 1].toLowerCase()}, body ${BODY5[w.body - 1].toLowerCase()}${w.c === "r" ? ", tannin " + SCALE5[w.tannin - 1].toLowerCase() : ""}. Climate: ${w.climate.toLowerCase()}. ${w.world} World.</p></div></div></div>`).join("")}
   <h2>4 · Score them</h2><div class="card small" style="color:var(--ink2)">For each wine, give a point for: the right grape (3), the right country (2), the right climate (1), Old vs New World (1), age range within reason (1). 60% is a Certified pass. Then drink what's left together; that's the real reward.</div>
-  <p class="small muted" style="margin-top:28px">Made with <a href="#campus">Tastevin Academy</a>, a free online somm school.</p></div>`;
+  <p class="small muted" style="margin-top:28px">Made with <a href="#campus">Vitis Mundi Academy</a>, a free online somm school.</p></div>`;
 }
