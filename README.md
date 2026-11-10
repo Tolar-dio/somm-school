@@ -45,3 +45,9 @@ Each quiz row is `[difficulty 1-3, question, correct answer, [three distractors]
 Append new questions to the end of a lesson's quiz array: the "Review your misses" record is keyed by lesson id and position. Every lesson lives whole in one content file; nothing patches a lesson from another file.
 
 Independent and unaffiliated with the Court of Master Sommeliers, WSET, the Institute of Masters of Wine, the Society of Wine Educators or the Wine Scholar Guild. Exam formats follow their published guides; all lesson text and questions are original.
+
+## Figures that go stale
+
+`tools/perishable.json` lists every figure in the lessons that will be wrong within a few years: exam results and fees, world production, appellation counts, tariffs. Each entry holds the exact phrase from the lesson, the date it was last compared with its source, the source link, and how many months it can be trusted.
+
+Run `python3 tools/check_register.py` to see which figures are past their date, which have never been confirmed, and which phrases have been edited in a lesson without updating the register. When you change a registered figure in a lesson, change its `text` and `checked` date in the register too.

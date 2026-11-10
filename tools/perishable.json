@@ -1,0 +1,327 @@
+{
+ "_about": "Figures in the lessons that go stale. 'text' is an exact phrase from the lesson, so check_register.py can tell when the lesson and this list drift apart. 'checked' is the date the figure was last compared with its source; an empty 'source' means it has never been confirmed. 'months' is how long the figure can be trusted.",
+ "items": [
+  {
+   "lesson": "o1",
+   "text": "Only 4 of 30 candidates passed the full MS exam in 2026",
+   "checked": "2026-11-10",
+   "months": 12,
+   "source": "https://www.mastersommeliers.org/blog/latest-happenings/court-of-master-sommeliers-americas-announces-new-master-sommeliers-for-2026/"
+  },
+  {
+   "lesson": "o1",
+   "text": "around 74% first time",
+   "checked": "",
+   "months": 24,
+   "source": ""
+  },
+  {
+   "lesson": "o2",
+   "text": "CMS Introductory online is $649",
+   "checked": "2026-11-10",
+   "months": 12,
+   "source": "https://www.mastersommeliers.org/certification/certification-levels/introductory-sommelier-course-and-exam/"
+  },
+  {
+   "lesson": "o2",
+   "text": "WSET Level 3 runs about $1,135 to $1,780",
+   "checked": "",
+   "months": 12,
+   "source": ""
+  },
+  {
+   "lesson": "o2",
+   "text": "the Diploma about $7,800",
+   "checked": "",
+   "months": 12,
+   "source": ""
+  },
+  {
+   "lesson": "o4",
+   "text": "Stage 2 candidates fell from 145 (2024) to 111 (2026)",
+   "checked": "2026-11-10",
+   "months": 12,
+   "source": "https://www.mastersofwine.org/2026/06/15/2026-master-of-wine-exam-questions-and-wines-revealed/"
+  },
+  {
+   "lesson": "c2",
+   "text": "about 425 hold the title today",
+   "checked": "2026-11-09",
+   "months": 12,
+   "source": "https://www.mastersofwine.org/"
+  },
+  {
+   "lesson": "c2",
+   "text": "2025 was barely higher at about 227 million",
+   "checked": "2026-11-10",
+   "months": 12,
+   "source": "https://www.oiv.int/sites/default/files/2026-05/OIV-State_of_the_World_Wine_Sector_in_2025.pdf"
+  },
+  {
+   "lesson": "c2",
+   "text": "fell to about €34 billion in 2025",
+   "checked": "2026-11-10",
+   "months": 12,
+   "source": "https://www.oiv.int/sites/default/files/2026-05/OIV-State_of_the_World_Wine_Sector_in_2025.pdf"
+  },
+  {
+   "lesson": "biz1",
+   "text": "(about 225 mhl)",
+   "checked": "2026-11-10",
+   "months": 12,
+   "source": "https://www.oiv.int/sites/default/files/2026-05/OIV-State_of_the_World_Wine_Sector_in_2025.pdf"
+  },
+  {
+   "lesson": "biz2",
+   "text": "227 million hL in 2025",
+   "checked": "2026-11-10",
+   "months": 12,
+   "source": "https://www.oiv.int/sites/default/files/2026-05/OIV-State_of_the_World_Wine_Sector_in_2025.pdf"
+  },
+  {
+   "lesson": "biz2",
+   "text": "208 million hL in 2025",
+   "checked": "2026-11-10",
+   "months": 12,
+   "source": "https://www.oiv.int/sites/default/files/2026-05/OIV-State_of_the_World_Wine_Sector_in_2025.pdf"
+  },
+  {
+   "lesson": "biz2",
+   "text": "€33.8 billion in 2025",
+   "checked": "2026-11-10",
+   "months": 12,
+   "source": "https://www.oiv.int/sites/default/files/2026-05/OIV-State_of_the_World_Wine_Sector_in_2025.pdf"
+  },
+  {
+   "lesson": "biz2",
+   "text": "legal in 48 states",
+   "checked": "2026-11-10",
+   "months": 12,
+   "source": "https://freethegrapes.org/dtc-wine-shipping-in-2026/"
+  },
+  {
+   "lesson": "biz2",
+   "text": "DTC shipped 6.4 million cases in 2024",
+   "checked": "",
+   "months": 12,
+   "source": ""
+  },
+  {
+   "lesson": "biz2",
+   "text": "at least 75 selections",
+   "checked": "2026-11-10",
+   "months": 24,
+   "source": "https://www.winespectator.com/articles/about-the-awards"
+  },
+  {
+   "lesson": "biz2",
+   "text": "99 winners in 2026",
+   "checked": "2026-11-10",
+   "months": 12,
+   "source": "https://www.winespectator.com/articles/wine-spectator-restaurant-awards-reveal-2026"
+  },
+  {
+   "lesson": "biz2",
+   "text": "£30.62 per litre of pure alcohol from 1 February 2026",
+   "checked": "",
+   "months": 12,
+   "source": ""
+  },
+  {
+   "lesson": "biz2",
+   "text": "39% for the US",
+   "checked": "",
+   "months": 6,
+   "source": ""
+  },
+  {
+   "lesson": "biz2",
+   "text": "326.31 on 30 September 2026",
+   "checked": "",
+   "months": 6,
+   "source": ""
+  },
+  {
+   "lesson": "biz2",
+   "text": "17 states (plus parts of four others)",
+   "checked": "",
+   "months": 24,
+   "source": ""
+  },
+  {
+   "lesson": "s8",
+   "text": "TIPS is accepted in 45 states",
+   "checked": "",
+   "months": 24,
+   "source": ""
+  },
+  {
+   "lesson": "b7",
+   "text": "definition under consultation 2025-26",
+   "checked": "",
+   "months": 12,
+   "source": ""
+  },
+  {
+   "lesson": "b7",
+   "text": "Transition period to 2030",
+   "checked": "",
+   "months": 36,
+   "source": ""
+  },
+  {
+   "lesson": "b8",
+   "text": "Trappist beer (2026)",
+   "checked": "2026-11-10",
+   "months": 12,
+   "source": "https://sommdigi.com/blog/the-magic-of-trappist-beer-a-journey-through-its-rich-history-and-unique-production-process"
+  },
+  {
+   "lesson": "b8",
+   "text": "nine cider-family appellations",
+   "checked": "2026-11-10",
+   "months": 36,
+   "source": "https://www.choisirlanormandie.fr/cidre-du-perche-aoc/"
+  },
+  {
+   "lesson": "r14b",
+   "text": "280 established AVAs</b> (154 in California) as of August 2026",
+   "checked": "",
+   "months": 12,
+   "source": ""
+  },
+  {
+   "lesson": "r14b",
+   "text": "about 44,700 acres, 1,043 wineries",
+   "checked": "",
+   "months": 12,
+   "source": ""
+  },
+  {
+   "lesson": "r14b",
+   "text": "About 985 wineries",
+   "checked": "",
+   "months": 12,
+   "source": ""
+  },
+  {
+   "lesson": "r13b",
+   "text": "seventeen nested sub-AVAs",
+   "checked": "",
+   "months": 24,
+   "source": ""
+  },
+  {
+   "lesson": "r7e",
+   "text": "79 DOCGs, 332 DOCs",
+   "checked": "",
+   "months": 12,
+   "source": ""
+  },
+  {
+   "lesson": "r8c",
+   "text": "167 Viñedos Singulares",
+   "checked": "",
+   "months": 12,
+   "source": ""
+  },
+  {
+   "lesson": "r8c",
+   "text": "12,704 growers and 719 wineries",
+   "checked": "",
+   "months": 12,
+   "source": ""
+  },
+  {
+   "lesson": "r8c",
+   "text": "149 EU-registered wine GIs (2026)",
+   "checked": "",
+   "months": 12,
+   "source": ""
+  },
+  {
+   "lesson": "r8c",
+   "text": "19 wineries in 2025",
+   "checked": "",
+   "months": 12,
+   "source": ""
+  },
+  {
+   "lesson": "r1c",
+   "text": "2025 (vintages 2023-2027)",
+   "checked": "",
+   "months": 48,
+   "source": ""
+  },
+  {
+   "lesson": "r1c",
+   "text": "Next revision: around 2032",
+   "checked": "",
+   "months": 60,
+   "source": ""
+  },
+  {
+   "lesson": "r2c",
+   "text": "Petit Chablis about 1,296 ha",
+   "checked": "",
+   "months": 24,
+   "source": ""
+  },
+  {
+   "lesson": "r5d",
+   "text": "89% rosé</b>, 6% white, 5% red",
+   "checked": "",
+   "months": 24,
+   "source": ""
+  },
+  {
+   "lesson": "r5d",
+   "text": "The US (37%) and UK (18%)",
+   "checked": "",
+   "months": 24,
+   "source": ""
+  },
+  {
+   "lesson": "r12e",
+   "text": "32 PDOs</b> after Lechkhumi and Racha",
+   "checked": "",
+   "months": 24,
+   "source": ""
+  },
+  {
+   "lesson": "r11",
+   "text": "about 103,000 hectares",
+   "checked": "",
+   "months": 36,
+   "source": ""
+  },
+  {
+   "lesson": "r11",
+   "text": "about 45% of the world's Riesling",
+   "checked": "2026-11-09",
+   "months": 36,
+   "source": ""
+  },
+  {
+   "lesson": "r15c",
+   "text": "(around 96%)",
+   "checked": "",
+   "months": 24,
+   "source": ""
+  },
+  {
+   "lesson": "r5c",
+   "text": "about 330 ha on slopes",
+   "checked": "2026-11-10",
+   "months": 36,
+   "source": "https://www.winewithseth.com/winewiki/cote-rotie-aoc/"
+  },
+  {
+   "lesson": "r3b",
+   "text": "about 16,000 growers",
+   "checked": "",
+   "months": 36,
+   "source": ""
+  }
+ ]
+}
