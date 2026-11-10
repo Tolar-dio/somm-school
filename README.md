@@ -32,7 +32,8 @@ assets/css/style.css
 assets/js/content/   lessons and quizzes (one file per curriculum part)
 assets/js/data/      wine profiles, drills, shopping guide, label lab, matching
 assets/js/*.js       core, lab, floor, exam engine, learn views, tasting night, drills, app/router
-tools/               build_atlas_index.py (atlas links for region lessons)
+tools/               build_atlas_index.py (atlas links for region lessons), build_lesson_maps.py (region maps),
+                     perishable.json and check_register.py (figures that go stale)
 ```
 
 ## Editing questions
@@ -51,3 +52,7 @@ Independent and unaffiliated with the Court of Master Sommeliers, WSET, the Inst
 `tools/perishable.json` lists every figure in the lessons that will be wrong within a few years: exam results and fees, world production, appellation counts, tariffs. Each entry holds the exact phrase from the lesson, the date it was last compared with its source, the source link, and how many months it can be trusted.
 
 Run `python3 tools/check_register.py` to see which figures are past their date, which have never been confirmed, and which phrases have been edited in a lesson without updating the register. When you change a registered figure in a lesson, change its `text` and `checked` date in the register too.
+
+## Region maps
+
+Fifty region lessons open with a small map: the regions the lesson covers, numbered, with a list beneath that links each one to the atlas. The maps are drawn from the atlas's own region outlines by `python3 tools/build_lesson_maps.py /path/to/wine-world`, which writes `assets/js/data/maps/`. Which lesson gets which map is set in the `LESSONS` table at the top of that script; rerun it after the atlas outlines change.
