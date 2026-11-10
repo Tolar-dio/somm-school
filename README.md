@@ -56,3 +56,7 @@ Run `python3 tools/check_register.py` to see which figures are past their date, 
 ## Region maps
 
 Fifty region lessons open with a small map: the regions the lesson covers, numbered, with a list beneath that links each one to the atlas. The maps are drawn from the atlas's own region outlines by `python3 tools/build_lesson_maps.py /path/to/wine-world`, which writes `assets/js/data/maps/`. Which lesson gets which map is set in the `LESSONS` table at the top of that script; rerun it after the atlas outlines change.
+
+## Facts stated in more than one lesson
+
+An overview and its deep dives often state the same rule. `tools/shared_facts.json` lists 38 such facts with the agreed value, and `python3 tools/check_consistency.py` reports any lesson or quiz row that says something else (`-v` shows where each fact lives). Run it after editing a number; add a fact to the list when you find one repeated.

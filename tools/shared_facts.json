@@ -1,0 +1,274 @@
+{
+ "_about": "Facts stated in more than one lesson. Each pattern captures the number next to its keyword; check_consistency.py reports any lesson where the captured value is not in 'expect'. Add a fact here when you find one repeated across lessons.",
+ "facts": [
+  {
+   "fact": "Vin Jaune: months under the veil",
+   "pattern": "(\\d+) months under",
+   "expect": [
+    "60"
+   ]
+  },
+  {
+   "fact": "Clavelin size",
+   "pattern": "(\\d+) ?(?:cl|mL) clavelin",
+   "expect": [
+    "62",
+    "620"
+   ]
+  },
+  {
+   "fact": "Barolo minimum aging (months)",
+   "pattern": "Barolo DOCG: 100% Nebbiolo\\. Minimum (\\d+) months",
+   "expect": [
+    "38"
+   ]
+  },
+  {
+   "fact": "Barbaresco minimum aging (months)",
+   "pattern": "Barbaresco DOCG[^.]{0,60}?(\\d+) months",
+   "expect": [
+    "26"
+   ]
+  },
+  {
+   "fact": "Chianti Classico minimum Sangiovese",
+   "pattern": "Gallo Nero\\)\\. At least (\\d+)% Sangiovese|Chianti Classico[^.]{0,60}?at least (\\d+)% Sangiovese",
+   "expect": [
+    "80"
+   ]
+  },
+  {
+   "fact": "Vino Nobile minimum Sangiovese",
+   "pattern": "Vino Nobile di Montepulciano[^.]{0,40}?at least (\\d+)% Sangiovese",
+   "expect": [
+    "70"
+   ]
+  },
+  {
+   "fact": "Alsace Grand Crus",
+   "pattern": "\\b(\\d{2}) (?:named vineyards|Grand Crus \\(e\\.g\\., Schlossberg)",
+   "expect": [
+    "51"
+   ]
+  },
+  {
+   "fact": "Burgundy Grand Cru AOCs",
+   "pattern": "(\\d+) Grand Cru AOCs",
+   "expect": [
+    "33"
+   ]
+  },
+  {
+   "fact": "Italy's DOCG count",
+   "pattern": "Italy has (?:about |around )?(\\d+) DOCGs",
+   "expect": [
+    "79"
+   ]
+  },
+  {
+   "fact": "World production 2024 (million hL)",
+   "pattern": "production in 2024 was about (\\d{3})|2024[^.]{0,45}?\\(about (\\d{3}) mhl|2024's (\\d{3}) million",
+   "expect": [
+    "225"
+   ]
+  },
+  {
+   "fact": "World production 2025 (million hL)",
+   "pattern": "(\\d{3}) million(?: hL)? in 2025|2025 was barely higher at about (\\d{3})",
+   "expect": [
+    "227",
+    "208"
+   ]
+  },
+  {
+   "fact": "Cava Reserva (months)",
+   "pattern": "Cava[^.]{0,120}?Reserva:? (\\d+)",
+   "expect": [
+    "18"
+   ]
+  },
+  {
+   "fact": "Crémant minimum on lees (months)",
+   "pattern": "Crémant[^.;\\]]{0,60}?(\\d+) months",
+   "expect": [
+    "9"
+   ]
+  },
+  {
+   "fact": "Franciacorta minimum on lees (months)",
+   "pattern": "Pinot Bianco(\\d+) months|Lees minimums: NV (\\d+) months|Franciacorta \\(non-vintage\\)\\?\\\",\\\"(\\d+) months",
+   "expect": [
+    "18"
+   ]
+  },
+  {
+   "fact": "Champagne marc (kg)",
+   "pattern": "(\\d,\\d{3}) kg (?:yields|load)|marc of (\\d,\\d{3}) kg",
+   "expect": [
+    "4,000"
+   ]
+  },
+  {
+   "fact": "Bourbon minimum corn (51) and straight corn whiskey (80)",
+   "pattern": "(?:at least |: )(\\d+)%\\+? corn",
+   "expect": [
+    "51",
+    "80"
+   ]
+  },
+  {
+   "fact": "Tokaji Aszú minimum sugar (g/L)",
+   "pattern": "Aszú (?:must have )?at least (\\d+) g/L",
+   "expect": [
+    "120"
+   ]
+  },
+  {
+   "fact": "Eszencia sugar (g/L)",
+   "pattern": "Eszencia[^.]{0,70}?(\\d+)\\+? g/L",
+   "expect": [
+    "450"
+   ]
+  },
+  {
+   "fact": "Trocken maximum sugar (g/L)",
+   "pattern": "trocken \\(dry, up to (\\d+) g/L|'trocken' allows at most about:\\\",\\\"(\\d+) g/L",
+   "expect": [
+    "9"
+   ]
+  },
+  {
+   "fact": "Port fortifying spirit strength",
+   "pattern": "aguardente[^.]{0,25}?(\\d+)%|Grape spirit \\(~(\\d+)%",
+   "expect": [
+    "77"
+   ]
+  },
+  {
+   "fact": "Madeira Frasqueira (years in cask)",
+   "pattern": "Frasqueira[^.]{0,80}?(\\d+) years",
+   "expect": [
+    "20"
+   ]
+  },
+  {
+   "fact": "VOS Sherry (years)",
+   "pattern": "VOS[^.,;]{0,45}?(\\d+)\\+? years",
+   "expect": [
+    "20"
+   ]
+  },
+  {
+   "fact": "VORS Sherry (years)",
+   "pattern": "VORS[^.,;]{0,45}?(\\d+)\\+?(?: years|\\))",
+   "expect": [
+    "30"
+   ]
+  },
+  {
+   "fact": "Icewine picking temperature",
+   "pattern": "(?:pressed at|picked at|or colder\\?\\\",\\\")\\s?(-\\d+)°C",
+   "expect": [
+    "-8"
+   ]
+  },
+  {
+   "fact": "Judgment of Paris",
+   "pattern": "(19\\d\\d)[^.]{0,25}Judgment of Paris|Judgment of Paris[^.]{0,12}?(19\\d\\d)",
+   "expect": [
+    "1976"
+   ]
+  },
+  {
+   "fact": "Methuen Treaty",
+   "pattern": "(1\\d{3}) Methuen",
+   "expect": [
+    "1703"
+   ]
+  },
+  {
+   "fact": "Douro demarcated",
+   "pattern": "[Ii]n (1\\d{3})[^.]{0,40}(?:Pombal|Douro became)",
+   "expect": [
+    "1756"
+   ]
+  },
+  {
+   "fact": "INAO founded",
+   "pattern": "(?:INAO|Institut National des Appellations d'Origine)[^.]{0,40}?(19\\d\\d)",
+   "expect": [
+    "1935"
+   ]
+  },
+  {
+   "fact": "Spätlese legend",
+   "pattern": "Spätlese[^.]{0,80}?(17\\d\\d)",
+   "expect": [
+    "1775"
+   ]
+  },
+  {
+   "fact": "Weinviertel, the first DAC",
+   "pattern": "Weinviertel[^.]{0,40}?\\((?:the first DAC, )?(20\\d\\d)\\)",
+   "expect": [
+    "2003"
+   ]
+  },
+  {
+   "fact": "Gran Selezione created",
+   "pattern": "Gran Selezione[^.]{0,30}?\\((?:created )?(20\\d\\d)",
+   "expect": [
+    "2014"
+   ]
+  },
+  {
+   "fact": "Cairanne cru",
+   "pattern": "Cairanne[^.]{0,40}?[Cc]ru since (20\\d\\d)",
+   "expect": [
+    "2016"
+   ]
+  },
+  {
+   "fact": "Mouton promoted",
+   "pattern": "(?:Mouton[^.]{0,60}?promoted[^.]{0,30}?|promoted )(19\\d\\d)",
+   "expect": [
+    "1973"
+   ]
+  },
+  {
+   "fact": "Pessac-Léognan AOC",
+   "pattern": "Pessac-Léognan \\(AOC created (19\\d\\d)|northern Graves in (19\\d\\d)|Pessac-Léognan became its own AOC in:\\\",\\\"(19\\d\\d)",
+   "expect": [
+    "1987"
+   ]
+  },
+  {
+   "fact": "Micro-oxygenation invented",
+   "pattern": "micro-oxygenation[^.]{0,40}?(19\\d\\d)",
+   "expect": [
+    "1991"
+   ]
+  },
+  {
+   "fact": "Old vine threshold (South Africa and Barossa)",
+   "pattern": "(?:Old Vine Project: certifies vineyards|Old Vine \\()(\\d+)",
+   "expect": [
+    "35"
+   ]
+  },
+  {
+   "fact": "Pilsner first brewed",
+   "pattern": "Plzeň, (1\\d{3})",
+   "expect": [
+    "1842"
+   ]
+  },
+  {
+   "fact": "Cognac XO since 2018 (years)",
+   "pattern": "XO (?:compte )?\\(?(\\d+)(?: years)? ?(?:\\(raised|since April 2018)",
+   "expect": [
+    "10"
+   ]
+  }
+ ]
+}
