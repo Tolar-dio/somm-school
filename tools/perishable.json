@@ -322,6 +322,34 @@
    "checked": "",
    "months": 36,
    "source": ""
+  },
+  {
+   "lesson": "sp1",
+   "text": "about 34,200 hectares in 319 villages",
+   "checked": "2026-11-13",
+   "months": 24,
+   "source": "https://www.champagne.fr/en/find-out-more/champagne-at-a-glance"
+  },
+  {
+   "lesson": "sp1",
+   "text": "About 16,500 <b>growers</b> farm 90% of the vineyards",
+   "checked": "2026-11-13",
+   "months": 24,
+   "source": "https://www.champagne.fr/en/find-out-more/champagne-at-a-glance"
+  },
+  {
+   "lesson": "sp1",
+   "text": "For 2025 it was 9,000 kilograms per hectare",
+   "checked": "2026-11-13",
+   "months": 12,
+   "source": "https://www.champagne.fr/en/find-out-more/champagne-at-a-glance"
+  },
+  {
+   "lesson": "sp1",
+   "text": "shipped about 266 million bottles in 2025",
+   "checked": "2026-11-13",
+   "months": 12,
+   "source": "https://www.champagne.fr/en/find-out-more/champagne-at-a-glance"
   }
  ]
 }
