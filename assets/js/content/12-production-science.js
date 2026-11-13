@@ -1,33 +1,135 @@
 // ===== CURRICULUM PART 12: Production science (Diploma D1 depth) =====
 L.push({id:"v1", unit:"F2", title:"Deep Dive: Vine Physiology, Ripeness and Vineyard Design", mins:22,
-summary:"How a vine builds sugar, acid and phenolics; rootstocks, clones and density; trellises; and measuring ripeness.",
+summary:"How the vine makes sugar and where it sends it, how a berry is built in two opposite stages, what ripeness is, how rootstock parentage predicts behavior, clones, density, training and water, and how to read a vineyard description as a set of answers to a place.",
 body:`
-<h3>What the vine is doing</h3>
-<p>A vine is a solar-powered sugar factory. Leaves photosynthesize (CO₂ + water + light → sugars), most efficiently between about 25 and 30°C; above roughly 35°C stomata close to save water and the factory slows. Sugar moves to the berries after véraison. Meanwhile, acids fall: <b>malic acid</b> is respired, faster in heat, which is why warm-climate wines are lower in acid; <b>tartaric acid</b> stays fairly stable. Potassium uptake raises pH. Color (anthocyanins) and tannins accumulate in skins and seeds, and aroma precursors develop.</p>
-<p>The vine balances vegetative growth (shoots, leaves) against reproductive growth (fruit). Too much vigor (rich soil, abundant water, nitrogen) means dense canopies, shaded fruit, green flavors and disease. Too little means unripe fruit or stress. "Vine balance" is the grower's goal: roughly enough leaf area to ripen the crop it carries, often expressed as 1-1.5 m² of exposed leaf per kg of fruit.</p>
-<h3>Ripeness is three things</h3>
-<ul><li><b>Sugar ripeness</b> (potential alcohol).</li>
-<li><b>Acid balance</b> (falling malic acid, rising pH).</li>
-<li><b>Phenolic ripeness</b>: brown, crunchy seeds; skins that release color easily; tannins that taste soft rather than green. In warm climates sugar can race ahead of phenolic ripeness, forcing a choice between green tannins and high alcohol.</li></ul>
+<p>The earlier chapters on the vine's year, on climate and on vineyard management described what happens in a vineyard and what a grower does about it. This chapter goes one level down. It explains how the vine works as a plant: how it makes sugar and where it sends it, what "ripe" means chemically, how the roots it is grafted onto change its behavior, and why vineyards in different places are laid out so differently. The aim is that when you read that a wine came from old bush vines on 110 Richter, dry-farmed at low density, you can say what each of those four facts did to the wine.</p>
+
+<h3>The sugar factory</h3>
+<p>A vine is a solar-powered sugar factory. In its leaves, light drives the reaction that combines carbon dioxide from the air with water from the soil to make sugar. Everything the plant builds, from wood to tannin to the sugar in the grape, starts as that sugar.</p>
+<p>The leaf takes in carbon dioxide through thousands of pores, called stomata, on its underside. The same pores lose water. That is the central bargain of the plant's life: it cannot take in carbon without losing water, and when water runs short it must close the pores and stop working.</p>
+<ul><li>Photosynthesis runs best at leaf temperatures between about 77 and 86°F (25 to 30°C).</li>
+<li>Above roughly 95°F (35°C), or when the soil is very dry, the pores close and the factory slows or stops. A heat wave therefore delays ripening. It does not speed it.</li>
+<li>A leaf needs direct sun. One shaded by two layers of other leaves receives too little light to pay its way and becomes a drain on the plant.</li></ul>
+<p>The last point is the basis of canopy management. A vine with a great mass of leaves is not more productive than one with fewer, well-exposed leaves. It is less.</p>
+
+<h3>How a berry is built</h3>
+<p>A grape does not grow steadily. It grows in two bursts with a pause between, and the two bursts do opposite things.</p>
+<table><tr><th>Stage</th><th>When</th><th>What happens</th></tr>
+<tr><td>I. Green growth</td><td>From fruit set, for about six to eight weeks</td><td>Cells divide and swell. The berry is hard, green and sour. Acids build up, malic most of all. Tannins and the green-pepper compounds are made. Seeds form</td></tr>
+<tr><td>II. Lag</td><td>One to two weeks</td><td>Growth almost stops while the seeds harden and mature</td></tr>
+<tr><td>III. Ripening</td><td>From véraison to harvest, six to eight weeks</td><td>The berry softens, colors and doubles in size. Sugar pours in. Malic acid is burned. Tannins soften. Aroma precursors form</td></tr></table>
+<p>The switch between the second and third stages is <b>véraison</b>, and it is abrupt. Within days the berry changes from a sink for acid to a sink for sugar. Until then it was fed mainly through the vessels that carry water up from the roots. From véraison those largely shut down, and the berry is fed through the other system, the one that carries sugar-laden sap from the leaves. This has two consequences worth remembering.</p>
+<ul><li>After véraison, the berry is cut off from a direct supply of water. Rain late in the season swells berries less than one would expect through the roots, though it can be absorbed through the skin and cause splitting.</li>
+<li>The grape stores no starch. Unlike a banana or a pear, it cannot ripen after picking. Every gram of sugar must arrive from the leaves while the bunch is on the vine. A grape is as ripe as it will ever be at the moment it is cut.</li></ul>
+<p>The biological logic is the plant's own. Before the seeds are viable, the fruit is green, sour, bitter and camouflaged, so nothing eats it. Once they are ready, it becomes sweet, colored and fragrant, so that birds will carry the seeds away. Winemaking exploits a signal meant for birds.</p>
+
+<h3>What happens to the acids</h3>
+<p>The two main acids behave differently, and the difference explains the taste of climate.</p>
+<p><b>Tartaric acid</b> is made early, in the green berry, and then left alone. Its amount per berry stays fairly stable, and its concentration falls only as the berry swells.</p>
+<p><b>Malic acid falls fastest during ripening, especially in heat.</b> It is built up before véraison and then used as fuel. The berry respires it, and the rate rises steeply with temperature, particularly night temperature. Experiments on the enzymes involved show that the berry accumulates malic acid most readily at around 68 to 77°F, and that the enzyme that breaks it down keeps working faster all the way to above 110°F. So a grape in a cool climate arrives at harvest with much of its malic acid intact, and a grape in a hot one with almost none. This is why cool-climate wines taste sharp and why warm-climate winemakers add acid.</p>
+<p><b>Potassium</b> complicates the picture. It moves into the berry along with sugar during ripening, and it neutralizes acid, raising the pH. Vigorous vines on fertile soil, heavily shaded, take up the most. Their wines can have a high pH even when the acid content looks adequate.</p>
+
+<h3>Balance</h3>
+<p>A vine has two things it can do with its sugar: grow shoots and leaves, or ripen fruit. Growers call these vegetative and reproductive growth, and the art of viticulture is managing the split.</p>
+<ul><li><b>Too much vigor,</b> from rich soil, abundant water and nitrogen, gives long shoots, dense canopies, shaded fruit, green flavors, high potassium and disease. The vine goes on growing when it should be ripening.</li>
+<li><b>Too little</b> gives a few small leaves that cannot ripen the crop, and a vine that weakens year by year.</li></ul>
+<p><b>Vine balance</b> is the goal: enough working leaf to ripen the crop the vine carries, and no more. Research in California put a number on it. A vine on a simple trellis needs about <b>0.8 to 1.2 square meters of exposed leaf for each kilogram of fruit</b>. Below that the fruit does not ripen fully. Above it there is no further gain. On trellises that divide the canopy in two, so that more leaves are in the sun, about 0.5 to 0.8 is enough. A second measure compares the weight of the crop to the weight of the wood pruned off the following winter. A ratio between about 5 and 10 indicates balance. Lower means the vine is growing wood at the expense of fruit, and higher means it is overcropped.</p>
+<p>These numbers reframe the old argument about yield. Low yield is not a virtue in itself. What matters is the ratio of leaf to fruit. A big, healthy vine on a wide trellis can ripen a large crop well, and a weak vine can fail to ripen a small one. The many site-specific rules about yield in European appellations are rough proxies for this balance.</p>
+
+<h3>Ripeness is several things</h3>
+<p>The components of ripeness advance on separate clocks, and the grower's hardest decision is picking the day when they are all acceptable.</p>
+<ul><li><b>Sugar ripeness</b> sets the potential alcohol. It is driven by warmth and sunlight on the leaves.</li>
+<li><b>Acid balance:</b> malic acid falls and pH rises.</li>
+<li><b>Phenolic ripeness</b> is shown by <b>brown, crunchy seeds</b>, skins that release color easily, and tannins that taste soft and not green. It depends more on time than on heat.</li>
+<li><b>Aromatic ripeness:</b> green-pepper compounds decline and fruit precursors build.</li></ul>
+<p>In a cool climate sugar is the laggard, and growers wait for it. In a warm climate the problem is reversed: sugar races ahead, and the grapes reach 14% potential alcohol while the seeds are still green and the tannins hard. The grower must choose between green tannins at moderate alcohol and ripe tannins at high alcohol. The fashion of the 1990s and 2000s for long "hang time" was a decision to wait for phenolic ripeness whatever the cost in sugar, and the 15% wines of that era were the result. Warming has pushed more and more regions into this dilemma, and much current work in the vineyard, from shading to later-ripening clones to higher sites, is aimed at slowing sugar down so the rest can catch up.</p>
+<p>Growers measure sugar and acid with instruments. Phenolic and aromatic ripeness they still judge largely by walking the rows, tasting berries, chewing skins and biting seeds.</p>
+
 <h3>Measuring sugar</h3>
-<table class="t"><tr><th>Scale</th><th>Used in</th><th>Rough conversion</th></tr>
+<p>Sugar is measured by the density of the juice, and different countries use different scales for the same thing.</p>
+<table><tr><th>Scale</th><th>Used in</th><th>Rough conversion</th></tr>
 <tr><td>Brix (°Bx)</td><td>US, New World</td><td>Percent sugar by weight; × about 0.55-0.6 = potential alcohol %</td></tr>
 <tr><td>Baumé (°Bé)</td><td>France, Australia</td><td>Roughly equals potential alcohol %; about Brix ÷ 1.8</td></tr>
 <tr><td>Oechsle (°Oe)</td><td>Germany, Austria, Switzerland</td><td>Must density; about 4.5-5 × Brix</td></tr>
 <tr><td>KMW</td><td>Austria</td><td>Klosterneuburger Mostwaage, sugar by weight</td></tr></table>
-<p>Example: a 24 °Brix must gives about 13.5-14% alcohol if fermented dry, is around 13.3 °Baumé, and roughly 100 °Oechsle.</p>
+<p>Example: a <b>24 °Brix</b> must gives about <b>13.5-14% alcohol</b> if fermented dry, is around 13.3 °Baumé, and roughly 100 °Oechsle. The German and Austrian quality ladders, from Kabinett to Trockenbeerenauslese, are defined in degrees Oechsle or KMW at harvest, which is why these scales matter for exams.</p>
+
 <h3>Rootstocks</h3>
-<p>Chosen for phylloxera resistance plus vigor, drought tolerance, lime tolerance and nematode resistance. Common ones: <b>Riparia Gloria</b> (low vigor, early), <b>3309 Couderc</b> and <b>101-14</b> (moderate vigor, cool climates), <b>SO4</b> and <b>5BB</b> (vigorous), <b>110 Richter</b> and <b>1103 Paulsen</b> (drought tolerant, warm climates), <b>41B</b> and <b>Fercal</b> (high lime tolerance: Champagne, Cognac). A wrong match can doom a vineyard: California's widespread AXR1 rootstock failed to phylloxera in the 1980s-90s, forcing massive replanting.</p>
-<h3>Clonal vs massal selection</h3>
-<p><b>Clonal selection</b> propagates from one mother vine chosen for a trait (yield, ripening, virus-free status). <b>Massal selection</b> (sélection massale) takes cuttings from many good vines in a vineyard, preserving genetic diversity, valued by many top Burgundy and Barolo estates. "Suitcase clones" smuggled from famous vineyards are a New World legend.</p>
-<h3>Density and training</h3>
-<ul><li><b>Density</b>: Burgundy and Champagne plant about 8,000-10,000+ vines/ha; much of the New World 1,500-3,500. Higher density means more competition, smaller vines and less fruit per vine, though not automatically better wine.</li>
-<li><b>Training systems</b>: Guyot (single or double, cane-pruned; Bordeaux, Burgundy), cordon de Royat (spur; Champagne), Chablis system, gobelet/bush vine (hot, dry), <b>VSP</b>, <b>Scott Henry</b> and <b>Smart-Dyson</b> (divided canopies to tame vigor), <b>Geneva Double Curtain</b> and <b>lyre</b> (divided, high vigor sites), <b>pergola</b> and <b>tendone</b> (overhead; Alto Adige, Vinho Verde, Galicia), and <b>Mosel single-stake (Einzelpfahl)</b> on steep slopes.</li>
-<li><b>Canopy work</b>: shoot thinning, leaf removal (riskier now with sunburn), hedging, crop thinning (green harvest) to concentrate remaining fruit.</li></ul>
+<p>Nearly every vine in the world is two plants joined together. The top, which bears the fruit, is the European wine grape. The roots belong to an American species or a hybrid of several. The reason is phylloxera, the root-feeding insect that destroyed most of Europe's vineyards in the late 1800s. American vines evolved alongside it and tolerate it. European vines die.</p>
+<p>Three American species supplied nearly all the breeding material, and each brought the habits of the place it came from.</p>
+<table><tr><th>Species</th><th>Native habitat</th><th>Brings</th></tr>
+<tr><td><i>Vitis riparia</i></td><td>Riverbanks: cool, moist, fertile</td><td>Shallow roots, low vigor, early ripening, tolerance of wet soil. Poor in drought and on lime</td></tr>
+<tr><td><i>Vitis rupestris</i></td><td>Rocky, dry streambeds</td><td>Deep roots, drought tolerance, moderate to high vigor</td></tr>
+<tr><td><i>Vitis berlandieri</i></td><td>Limestone hills of Texas</td><td>Tolerance of lime, deep roots, drought tolerance, late ripening. Roots badly from cuttings, so it is always used in crosses</td></tr></table>
+<p>The common rootstocks are crosses between these, and knowing the parents predicts the behavior.</p>
+<table><tr><th>Cross</th><th>Examples</th><th>Character</th><th>Typical use</th></tr>
+<tr><td>Pure riparia</td><td>Riparia Gloire</td><td>Low vigor, early</td><td>Fertile, moist soils; fine wine in cool climates</td></tr>
+<tr><td>riparia × rupestris</td><td>3309 Couderc, 101-14</td><td>Low to moderate vigor</td><td>Cool climates, deep soils: Burgundy, Bordeaux, Oregon</td></tr>
+<tr><td>berlandieri × riparia</td><td>SO4, 5BB, 5C, 420A</td><td>Moderate to vigorous; some lime tolerance</td><td>Widely planted; Germany, cooler sites</td></tr>
+<tr><td>berlandieri × rupestris</td><td>110 Richter, 1103 Paulsen, 140 Ruggeri</td><td>Vigorous, deep-rooted, drought tolerant</td><td>Hot, dry climates: southern Europe, California, Australia</td></tr>
+<tr><td>vinifera × berlandieri</td><td>41B, and the more complex Fercal</td><td>High lime tolerance</td><td>Chalk: Champagne, Cognac</td></tr></table>
+<p>Lime deserves a note. In chalky and limestone soils, iron is chemically locked up, and a vine on the wrong roots turns yellow and stops growing, a condition called chlorosis. Since much of France's best vineyard land is limestone, lime tolerance was the great problem of the replanting, and it was solved only when berlandieri was brought into the crosses. <b>41B</b>, valued for lime tolerance on chalk, made the replanting of Champagne possible.</p>
+<p>A rootstock is chosen first for resistance to phylloxera and then for fit: vigor, drought tolerance, lime tolerance, resistance to the microscopic worms called nematodes, and its effect on ripening date. A wrong match can doom a vineyard, and the classic case is California's.</p>
+<p><b>AXR1</b> was a cross between a European wine grape and rupestris. It was easy to graft, vigorous and productive, and it was recommended for the North Coast by the state's own university for decades, though French growers had abandoned it long before because its half-European parentage gave it only partial resistance. In the 1980s a strain of <b>phylloxera</b> able to overcome it, called biotype B, appeared in Napa and Sonoma. By the end of 1995 more than 12,000 acres had been pulled out in those two counties alone, and most of the North Coast was eventually replanted, at a cost usually put at a billion dollars or more. The disaster had one benefit. The replanting was done with better-matched varieties, closer spacing, improved clones and modern trellises, and the quality of California wine rose sharply in the years that followed.</p>
+<p>A few places still grow vines on their own roots: Chile, which phylloxera has never reached; parts of South Australia, protected by quarantine; much of Washington State; and pockets of very sandy soil, in which the insect cannot move, such as Colares in Portugal. Volcanic Santorini has vines centuries old. Whether ungrafted vines make better wine is argued over and unproven.</p>
+
+<h3>Clones and massal selection</h3>
+<p>Vines are propagated by cuttings, not seeds, so every vine of a variety is in principle a copy of the original seedling. Over centuries, small mutations accumulate, and vines of the same variety come to differ in berry size, yield, ripening date and flavor. Old varieties such as Pinot Noir show the widest variation.</p>
+<p><b>Clonal selection</b> propagates from a single mother vine chosen for a trait: yield, ripening date, loose bunches that resist rot, freedom from virus. Every vine in the resulting block is identical. The method was developed in Germany and then systematically in France from the 1950s, where the state certifies and numbers clones. The best-known are the Dijon clones of Pinot Noir and Chardonnay, selected in Burgundy in the 1970s and 1980s and known by numbers such as 115, 667 and 777. They reached Oregon and California from the late 1980s and changed the wines there.</p>
+<p>Clones brought healthier, more reliable vineyards. The early selections were often chosen for yield, and a block of a single clone ripens all at once and tastes of one thing. So many estates plant a mix of clones, and some have returned to the older practice.</p>
+<p><b>Massal selection</b>, <i>sélection massale</i>, takes cuttings from many good vines in an old vineyard, preserving the genetic diversity of the population. It is valued by many top estates in Burgundy and Barolo, who argue that the variation gives complexity and that their own vines are adapted to their site. The risk is that it propagates viruses along with virtues. "Suitcase clones," cuttings said to have been smuggled from famous vineyards, are a New World legend with some truth in it.</p>
+
+<h3>Density</h3>
+<p>Planting density, the number of vines to the hectare, differs tenfold around the world. Burgundy and Champagne plant about 8,000 to 10,000 and more. Much of the New World plants 1,500 to 3,500.</p>
+<p>The European reasoning is competition. Vines planted close together compete for water and nutrients, so each stays small, carries a few bunches and ripens them well. High density suits poor soils and climates with summer rain, where the difficulty is restraining growth. Before phylloxera, vineyards were denser still, a tangle of vines propagated by burying shoots, and the present rows date from replanting on rootstocks and the arrival of the horse and then the tractor. Row width in the New World was set largely by the width of the machinery.</p>
+<p>Density is not a guarantee of quality. On fertile soil with irrigation, crowding vines does not weaken them enough, and the result is a dense, shaded canopy. A long trial with juice grapes in Washington found that high density reduced both yield and quality for exactly that reason. The sound principle is to match the size of the vine to the capacity of the site: small vines close together on poor ground, larger vines further apart, on a trellis that spreads the canopy, on rich ground. What matters is yield and leaf area per vine, more than vines per hectare.</p>
+
+<h3>Training and pruning</h3>
+<p>Training is the permanent shape given to the vine. Pruning is the annual cutting that decides how many buds, and so how many shoots and bunches, it will carry. Two choices define a system.</p>
+<ul><li><b>Cane or spur.</b> In cane pruning, one or two of last year's shoots are kept at full length and tied down, and the rest of the vine is cut back to the trunk each winter. In spur pruning, a permanent horizontal arm, the cordon, carries short stubs of two buds each. Cane pruning needs skilled labor and suits varieties whose first buds are unfruitful and cool climates where frost may kill some buds. Spur pruning is simple and can be done by machine.</li>
+<li><b>How the shoots are arranged.</b></li></ul>
+<table><tr><th>System</th><th>Form</th><th>Where and why</th></tr>
+<tr><td>Guyot (single or double)</td><td>Cane-pruned, shoots trained upward</td><td>Bordeaux, Burgundy; the standard of cool Europe</td></tr>
+<tr><td>Cordon de Royat</td><td>Spur-pruned on a permanent arm</td><td>Champagne's Pinot Noir; widely used worldwide</td></tr>
+<tr><td>VSP (vertical shoot positioning)</td><td>Shoots held upright between wires in a thin wall</td><td>The modern default: good exposure, easy to mechanize</td></tr>
+<tr><td>Gobelet, bush vine</td><td>A short trunk with arms, no wires</td><td>Hot, dry, windy places: southern Rhône, Spain, old vines everywhere. The vine shades its own fruit and needs little water. It cannot be worked by machine</td></tr>
+<tr><td>Scott Henry, Smart-Dyson</td><td>The canopy divided vertically, half the shoots up and half down</td><td>Vigorous sites: doubles the exposed leaf</td></tr>
+<tr><td>Geneva Double Curtain, lyre</td><td>The canopy divided horizontally into two walls</td><td>High-vigor sites</td></tr>
+<tr><td>Pergola, tendone</td><td>An overhead roof of foliage with fruit hanging beneath</td><td>Alto Adige, Vinho Verde, Galicia, Argentina: lifts fruit above damp ground and shades it from fierce sun</td></tr>
+<tr><td>Single stake (Einzelpfahl)</td><td>Each vine on its own post, canes bent into a heart</td><td>The Mosel's steep slate slopes, where wires and rows are impossible</td></tr></table>
+<p><b>Scott Henry and Smart-Dyson are divided-canopy training systems.</b> They belong to a body of work from the 1980s, associated above all with the Australian Richard Smart, which showed that the problem in many New World vineyards was shade, and that splitting a crowded canopy into two thinner ones improved both yield and quality at once. It overturned the assumption that the two always trade off.</p>
+<p><b>Canopy work</b> through the season adjusts what pruning set up: shoot thinning, removing leaves around the bunches for air and light, trimming the tops, and <b>green harvest</b>, cutting off bunches in summer to bring the crop into balance. Leaf removal has become riskier as summers have grown hotter and exposed fruit sunburns.</p>
+
 <h3>Water</h3>
-<p>Mild water stress after fruit set slows shoot growth and concentrates berries; severe stress halts photosynthesis. Tools: <b>regulated deficit irrigation (RDI)</b> and <b>partial rootzone drying (PRD)</b>; dry-farming where rainfall and soils allow. Measured via pressure chambers (stem water potential) and soil moisture probes.</p>
+<p>Water is the grower's most powerful control over the vine after pruning, where irrigation is allowed.</p>
+<p>The principle is that the vine's two kinds of growth respond differently to thirst. Shoot growth is very sensitive and stops at the first shortage. Photosynthesis is less sensitive and continues. So <b>mild water stress</b> after fruit set halts the shoots while the leaves go on making sugar, and all of it goes to the fruit. Mild stress early also keeps berries small, which raises the ratio of skin to juice, and so the color and tannin. Severe stress closes the pores, halts photosynthesis and stops ripening altogether.</p>
+<p>Timing matters as much as amount. Berry size is set largely before véraison, during cell division, and a shortage then cannot be made up later. After véraison a moderate deficit has little effect on size.</p>
+<p>Vine water status is measured with a pressure chamber. A leaf is sealed in the chamber and gas pressure is raised until sap appears at the cut stem. The pressure needed shows how hard the vine is pulling on its water.</p>
+<table><tr><th>Stem water potential at midday</th><th>State of the vine</th></tr>
+<tr><td>Above −0.6 MPa (−6 bar)</td><td>No stress; shoots growing</td></tr>
+<tr><td>−0.8 to −1.1 MPa</td><td>Mild stress: growth slows; the target for quality</td></tr>
+<tr><td>−1.1 to −1.4 MPa</td><td>Moderate stress</td></tr>
+<tr><td>Below −1.4 MPa</td><td>Severe stress; leaves shut down and may drop</td></tr></table>
+<ul><li><b>Regulated deficit irrigation (RDI)</b> gives the vine less water than it would use, at chosen stages, to hold it in mild stress.</li>
+<li><b>Partial rootzone drying (PRD)</b>, developed in Australia in the 1990s, waters one side of the vine and lets the other dry, then switches. The drying roots send a chemical signal that makes the leaves conserve water, while the wet side keeps the vine supplied.</li>
+<li><b>Dry-farming</b> uses no irrigation, where rainfall and deep soils allow.</li></ul>
+<p>The great terroirs of Europe turn out to be natural deficit irrigation systems. The gravel of the Médoc, the limestone of Burgundy and the chalk of Champagne all supply water freely in spring and progressively less through summer, without ever cutting it off. For most of the last century irrigation was banned in French appellations. As summers dry, the rules are being relaxed.</p>
+
 <h3>Harvest</h3>
-<p>Hand picking allows whole-bunch, selection and gentle handling (required in Champagne, Beaujolais crus and for most top wines); machine harvesting is fast and cheap and can work at night when fruit is cool. Sorting tables, optical sorters and vibrating tables remove underripe or damaged berries.</p>`,
+<p>The last decision is how to pick.</p>
+<p><b>Hand picking</b> brings in whole bunches, undamaged, and allows selection in the vineyard. It is required in Champagne and the Beaujolais crus, is the only option on steep slopes and for bush vines, and is needed for any wine made from whole bunches or from individually selected berries. It is slow and expensive and depends on finding a workforce for a few weeks a year.</p>
+<p><b>Machine harvesting</b> straddles the row and shakes the fruit off its stems with vibrating rods. It is fast and cheap, a fraction of the cost per ton, and it has one real advantage for quality: it can work <b>at night</b>, when the fruit is cool. Cold grapes oxidize more slowly, resist microbes, keep their aromas and need less energy to chill at the winery. In hot regions a machine-picked crop delivered cold at dawn is often in better condition than a hand-picked one that sat in bins through a warm afternoon. Modern machines sort and destem on board. The old objections, broken berries and leaves in the load, apply less each year, and comparative trials often find little difference in the wine when the fruit is processed promptly.</p>
+<p><b>Sorting</b> has changed more than picking. Sorting tables, where workers pick out leaves and bad berries by hand, have been joined by vibrating tables and <b>optical sorters</b>: cameras photograph each berry as it flies past, and jets of air knock out any that are the wrong color, shape or size, thousands per second. An estate can now exclude underripe, raisined and damaged fruit with a precision that was impossible a generation ago. Together with stricter selection in the cellar, it is one reason poor vintages are rarer than they were.</p>
+
+<h3>Reading a vineyard</h3>
+<p>Return to the example in the opening paragraph: old bush vines on 110 Richter, dry-farmed at low density.</p>
+<ul><li><b>Bush vines:</b> a hot, dry, probably windy place. Fruit shaded by its own leaves, no wires, hand labor.</li>
+<li><b>110 Richter:</b> a berlandieri and rupestris cross, deep-rooted and drought tolerant. The grower expects water to be short.</li>
+<li><b>Dry-farmed:</b> the vines live on stored winter rain. Berries will be small and the crop light.</li>
+<li><b>Low density:</b> each vine needs a large volume of soil to find enough water, so they are spaced far apart.</li>
+<li><b>Old:</b> deep roots, a naturally small crop, a vine in settled balance.</li></ul>
+<p>Every element is an adaptation to the same fact, a shortage of water, and together they predict the wine: concentrated, ripe, low-yielding, from somewhere like the southern Rhône, Priorat, the Swartland or the Barossa. Read the same way, a description of Guyot-trained vines at 10,000 to the hectare on 41B says chalk, cool climate, summer rain and a grower working to restrain vigor. The vineyard is a set of answers, and the questions are the place.</p>
+`,
 floor:`<p>On the floor, translate this to guest language: "Old vines naturally give fewer, more concentrated grapes," "These are hand-picked from a steep slope," "Cool nights keep the acidity bright." Precision earns trust.</p>`,
 analyst:`<p>Diploma D1 questions: explain how vine balance affects quality; compare clonal and massal selection; discuss trellis choice for a high-vigor site; explain why phenolic ripeness and sugar ripeness diverge in warm climates.</p>`,
 terms:[["Phenolic ripeness","Maturity of skins, seeds and tannins, separate from sugar."],["Brix","Percent sugar in must; × 0.55-0.6 ≈ potential alcohol."],["Massal selection","Propagating from many vines in a vineyard to preserve diversity."],["110 Richter","Drought-tolerant rootstock."],["41B","Lime-tolerant rootstock used in Champagne."],["RDI","Regulated deficit irrigation."],["Green harvest","Removing bunches before ripening to reduce yield."]],
