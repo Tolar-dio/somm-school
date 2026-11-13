@@ -385,24 +385,42 @@ quiz:[
 ]});
 
 L.push({id:"f10", unit:"F3", title:"Sweet and Fortified Wines", mins:15,
-summary:"Concentrating sugar, stopping fermentation, and building strength.",
+summary:"The two limits of yeast that every sweet wine exploits, what noble rot, frost, drying and spirit each do to the grape, flor against oxygen against heat, and how to tell the methods apart.",
 body:`
-<h3>How sweet wines are made</h3>
-<p>Two families: <b>stop fermentation early</b> (chill, filter, add SO₂, or fortify), or <b>concentrate the sugar</b> so yeast can't finish (or add back sweet juice, called <b>süssreserve</b> in Germany).</p>
-<ul><li><b>Noble rot:</b> Sauternes and Barsac (Sémillon, Sauvignon Blanc, Muscadelle), Tokaji Aszú (Furmint), German BA and TBA. Honey, apricot, saffron, marmalade.</li>
-<li><b>Late harvest:</b> grapes left to overripen and shrivel. Alsace Vendanges Tardives, German Spätlese and Auslese.</li>
-<li><b>Freezing:</b> grapes picked frozen; water stays as ice in the press. Icewine (Canada, from Vidal, Riesling, Cabernet Franc) and Eiswein (Germany, Austria). Must be naturally frozen.</li>
-<li><b>Drying (passito):</b> grapes dried on mats or racks. Amarone (fermented dry) and Recioto (sweet) in Valpolicella, Vin Santo in Tuscany, Passito di Pantelleria. Vin de paille in Jura.</li></ul>
-<h3>Fortified wines</h3>
-<p>Fortification means adding grape spirit. <i>When</i> you add it decides everything:</p>
-<ul><li><b>During fermentation</b> keeps natural grape sugar: Port, Madeira (most), Vins Doux Naturels (Banyuls, Maury, Muscat de Beaumes-de-Venise, Rivesaltes).</li>
-<li><b>After fermentation</b> gives a dry base, sweetened later if at all: Sherry.</li></ul>
-<h3>Biological versus oxidative aging</h3>
-<p>Sherry introduces the most important split in fortified wine. Under a layer of yeast called <b>flor</b>, wine is protected from oxygen and becomes pale, tangy and saline (Fino, Manzanilla). Fortify past about 17% and flor dies; the wine ages <b>oxidatively</b>, becoming brown, nutty, walnut and toffee (Oloroso). Amontillado and Palo Cortado sit between. This also explains Tawny versus Ruby Port: oxidative wood aging versus reductive, fruit-preserving aging. Full details are in the Iberia unit.</p>
-<h3>Madeira's heat</h3>
-<p>Madeira is deliberately heated: <b>estufagem</b> (tanks warmed to about 113-122°F / 45-50°C for at least 3 months) for commercial wines, or <b>canteiro</b> (casks resting in warm lofts for years) for the best. The result is nearly indestructible: an opened bottle lasts months.</p>
+<p>Left alone, yeast turn all the sugar in grape juice into alcohol and the wine is dry. A sweet wine exists only because something stopped them. A fortified wine exists because spirit was added, and when it was added decides whether the wine is sweet or dry. This chapter is about the ways yeast can be stopped, what each way does to the grape and the wine, and why the results taste so different from one another. It ends with a way to tell them apart in the glass.</p>
+
+<h3>Why yeast stop</h3>
+<p>Yeast have two limits, and every sweet wine exploits one of them.</p>
+<p><b>Alcohol.</b> Alcohol is the yeast's own waste product, and it is toxic to them. Most wine yeast give up somewhere around 15%, and almost none survive above 18%. So if the juice holds more sugar than the yeast can convert before they reach their limit, some sugar is left over. And if spirit is added to raise the alcohol past the limit, fermentation stops at once.</p>
+<p><b>Sugar itself.</b> A very sweet juice draws water out of yeast cells, in the way salt draws water from a cucumber. The yeast survive by filling themselves with glycerol to hold their water, and the effort changes what they produce: more glycerol, which adds to the wine's thickness, and more acetic acid, the acid of vinegar. They work slowly, sometimes for months, and stop early. Experiments on Canadian icewine juice found that above about 42% sugar the yeast could not reach even 10% alcohol, and calculated that above about 52% they could not ferment at all. This is why the sweetest wines of all are the lowest in alcohol, and why Tokaji Eszencia, pressed from pure shriveled berries, creeps to a few percent over years. It is also why a trace of volatile, vinegary lift is normal in very sweet wines. The law allows icewine more of it than dry wine.</p>
+<p>From these two limits come the two families of sweet wine: <b>concentrate the sugar</b> in the grape until the yeast cannot finish, or <b>stop the fermentation</b> early, by chilling and filtering, by adding sulfur dioxide, or by fortifying. A third and humbler route is to ferment the wine dry and add back sweet unfermented juice, called süssreserve in Germany.</p>
+<p>A wine that is sweet and low in alcohol is food for any stray yeast, and could start fermenting again in the bottle. It must be filtered sterile, protected with sulfur dioxide, or made so strong or so sweet that nothing can live in it.</p>
+
+<h3>Noble rot</h3>
+<p>The most prized method uses a fungus. <i>Botrytis cinerea</i> is the same mold that destroys crops as grey rot. On ripe, healthy, thick-skinned white grapes, in exactly the right weather, it behaves differently and is called <b>noble rot</b>.</p>
+<p>The weather is the key. The fungus needs moisture to germinate and dry air to be held in check. The classic pattern is misty mornings followed by warm, sunny, dry afternoons, repeated for weeks in autumn. Sauternes has it because the cold little river Ciron runs into the warmer Garonne and raises fog over the vineyards. Tokaj has it where the Bodrog meets the Tisza. If the weather stays wet, the fungus runs out of control and the crop is lost to grey rot. If it stays dry, nothing happens. This is why great botrytis vintages are irregular and why the method cannot simply be copied elsewhere.</p>
+<p>What the fungus does to the berry:</p>
+<ul><li><b>It punctures the skin.</b> Its filaments pierce the skin in thousands of places without breaking it open. Water evaporates through the holes in the dry afternoons and the berry shrivels, concentrating everything inside.</li>
+<li><b>It feeds.</b> The fungus consumes some sugar and a good deal of acid, more of the tartaric than the malic. Because water is lost faster than sugar is eaten, the juice still ends far sweeter than it began, and concentration keeps the acidity high.</li>
+<li><b>It leaves products of its own.</b> Glycerol, which gives the wine its thick, oily texture. Gluconic acid, which a laboratory can use to prove botrytis was present. And an oxidizing enzyme, laccase, which helps give these wines their deep gold color.</li>
+<li><b>It creates aromas</b> found in no healthy grape: compounds smelling of honey, of apricot and peach, of saffron and curry spice, and a faint note of mushroom.</li></ul>
+<p>The result is the signature of the style: <b>honey, apricot, marmalade and saffron</b>, with a thick texture and enough acidity to carry the sweetness. The rot does not strike a bunch evenly, so pickers pass through the vineyard several times, sometimes berry by berry. The classics are <b>Sauternes and Barsac</b> (Sémillon, with Sauvignon Blanc and Muscadelle; Sémillon's thin skin takes the rot well), <b>Tokaji Aszú</b> (Furmint), and German and Austrian <b>Beerenauslese and Trockenbeerenauslese</b>.</p>
+
+<h3>Late harvest</h3>
+<p>The simplest concentration is to leave the grapes on the vine past normal ripeness. The vine has stopped supplying them, and they slowly lose water and shrivel. Sugar rises and flavors move from fresh fruit toward dried fruit. There may be a little botrytis or none. The wines are sweet but lighter and less honeyed than fully botrytized wines. Alsace <b>Vendanges Tardives</b> and German <b>Spätlese and Auslese</b> are the models, though many Spätlesen today are fermented dry.</p>
+
+<h3>Freezing</h3>
+<p>Water freezes before sugar solution does. If grapes are left on the vine into winter and picked and pressed while frozen hard, the water stays behind in the press as ice, and what runs out is a small quantity of intensely sweet, intensely acidic juice. The colder the night, the more concentrated the juice. Canada requires at least 17.6°F (minus 8°C) and a minimum sugar level far above that of any ordinary harvest. Germany and Austria require minus 7°C.</p>
+<p>The grapes must be healthy, since the aim is purity. With no fungus and no drying, <b>Icewine</b> (Canada, from Vidal, Riesling and Cabernet Franc) and <b>Eiswein</b> (Germany, Austria) taste of very pure fruit, peach, pineapple and lychee, with piercing acidity and none of the honey and saffron of botrytis. The grapes must be <b>naturally frozen on the vine</b>. Freezing picked grapes in a freezer, called <b>cryoextraction</b>, imitates the effect cheaply, and Canada, Germany and Austria do not allow such wines to be called Icewine or Eiswein. Warmer winters are making true Eiswein rare in Germany: in some recent years almost none could be made.</p>
+
+<h3>Drying</h3>
+<p>Grapes can also be picked and then dried, on straw mats, on racks in airy lofts, or in the sun. The Italian word is <b>passito</b>. For Amarone the grapes lose about a third of their weight over roughly three months. Under a southern sun Pedro Ximénez can double its sugar concentration in a week or two.</p>
+<p>The berry is still alive while it dries, and it reacts. It goes on respiring and burns up malic acid, so dried-grape wines are often lower in acidity than the other sweet styles. Slow drying in a cool loft allows complex aromas to develop. Fast drying in hot sun cooks the fruit toward raisin, fig and caramel. The flavor signature is <b>dried fruit</b>: raisin, fig, dried apricot, often with an amber color.</p>
+<ul><li><b>Recioto della Valpolicella</b> is the sweet wine of dried red grapes. <b>Amarone</b> is the same grapes <b>fermented to dryness</b>, giving a dry red of 15% or more. It is the one famous passito wine that is not sweet.</li>
+<li><b>Vin Santo</b> in Tuscany, <b>Passito di Pantelleria</b> from Muscat, and <b>vin de paille</b> in the Jura are the other classics.</li></ul>
+
 <h3>How sweet is sweet?</h3>
-<table class="t"><tr><th>Wine</th><th>Typical residual sugar</th></tr>
+<table><tr><th>Wine</th><th>Typical residual sugar</th></tr>
 <tr><td>Moscato d'Asti</td><td>About 100 to 150 g/L, at 5 to 6% alcohol</td></tr>
 <tr><td>Port</td><td>About 90 to 120 g/L</td></tr>
 <tr><td>Sauternes</td><td>120 to 150 g/L</td></tr>
@@ -410,31 +428,54 @@ body:`
 <tr><td>Icewine, Trockenbeerenauslese</td><td>Often 160 to 250 g/L</td></tr>
 <tr><td>Pedro Ximénez Sherry</td><td>400 g/L and more</td></tr>
 <tr><td>Tokaji Eszencia</td><td>At least 450 g/L, at only a few percent of alcohol</td></tr></table>
-<p>Sugar alone is syrup. What makes these wines great is <b>acidity</b>: Riesling, Chenin Blanc, Furmint and Sémillon in a cool autumn keep enough acid to make 150 g/L taste fresh. When you assess a sweet wine, ask first whether the finish is clean or cloying.</p>
+<p>Sugar alone is syrup. What makes these wines great is <b>acidity</b>. Every method that removes water concentrates acid along with sugar, and the grapes used are chosen for it: Riesling, Chenin Blanc, Furmint and Sémillon in a cool autumn keep enough acid to make 150 g/L taste fresh. When you assess a sweet wine, ask first whether the finish is clean or cloying.</p>
+
 <h3>Why they cost so much</h3>
-<p>Every method throws away water, and water is volume. Château d'Yquem averages about 9 hl/ha, often put as one glass of wine per vine, against 50 or more for a dry white. Pickers pass through a botrytized vineyard several times, berry by berry. Icewine growers leave fruit hanging into December for birds, rot and thaw to take. In poor years there is no wine at all.</p>
-<h3>Telling the methods apart in the glass</h3>
-<table class="t"><tr><th>Method</th><th>Signature</th></tr>
-<tr><td>Noble rot</td><td>Honey, apricot, marmalade, saffron, ginger; a thick, glycerol-rich texture</td></tr>
-<tr><td>Late harvest</td><td>Ripe and dried stone fruit, less honeyed, lighter</td></tr>
-<tr><td>Icewine</td><td>Very pure fruit (peach, pineapple, lychee) with piercing acidity and no botrytis notes</td></tr>
-<tr><td>Drying (passito)</td><td>Raisin, fig, dried apricot, caramel; often amber</td></tr>
-<tr><td>Fortified during fermentation</td><td>Fresh grape sweetness with the warmth of spirit</td></tr></table>
-<p>Freezing picked grapes in a freezer (<b>cryoextraction</b>) imitates icewine cheaply. Canada, Germany and Austria do not allow such wines to be called Icewine or Eiswein.</p>
+<p>Every method throws away water, and water is volume. Château d'Yquem averages about 9 hl/ha, often put as one glass of wine per vine, against 50 or more for a dry white. Pickers pass through a botrytized vineyard several times. Icewine growers leave fruit hanging into December for birds, rot and thaw to take. Drying lofts tie up space and labor for months. In poor years there is no wine at all.</p>
+
+<h3>Fortified wines</h3>
+<p>Fortification means adding grape spirit. It began as a way to make wine survive a sea voyage: at 15% and above almost nothing can spoil it. The decisive question is <b>when</b> the spirit goes in.</p>
+<ul><li><b>During fermentation</b>, the spirit kills the yeast while grape sugar remains, and the wine is sweet: <b>Port</b>, most Madeira, and the <b>Vins Doux Naturels</b> of southern France (Banyuls, Maury, Rivesaltes, Muscat de Beaumes-de-Venise).</li>
+<li><b>After fermentation</b>, the wine is already dry, and stays dry unless sweetened later: <b>Sherry</b>.</li></ul>
+<p>Port shows what the timing costs. The spirit is added when about half the sugar has fermented, after only two or three days. A red wine normally takes its color and tannin from the skins over a week or more. Port must get all of it in those few days, which is why the grapes were traditionally trodden by foot in shallow stone troughs, and why machines that imitate treading are used today. Port's spirit is unusual too. It is a grape brandy of 77% alcohol, not a neutral spirit, added at roughly one part to four of wine, so a fifth of what is in the bottle is brandy and its quality matters. The French use a neutral spirit of about 96% and so add much less.</p>
+<p><b>Rutherglen Muscat</b>, from Victoria in Australia, takes the idea to an extreme. Grapes are left to raisin on the vine and the juice is fortified <b>very early</b>, when it has barely begun to ferment, so nearly all its sugar is the grape's own. Decades in hot sheds do the rest.</p>
+
+<h3>Biological versus oxidative aging</h3>
+<p>Sherry introduces the most important split in fortified wine, and the strength of the wine controls it.</p>
+<p>At about 15 to 15.5% alcohol, in a cask left partly empty, a film of yeast called <b>flor</b> grows across the surface of the wine. It is alive, and it lives on what it finds: oxygen from the air above, and alcohol and glycerol from the wine below. Because it uses up the oxygen, the wine beneath is protected and stays pale. Because it consumes glycerol, the wine becomes bone dry and light in body. And it produces acetaldehyde, which gives the sharp, tangy smell of bruised apple, almond and bread dough. This is <b>biological aging</b>, and it makes <b>Fino</b> and <b>Manzanilla</b>. Flor is fussy. It needs cool, humid cellars and dies if they grow too hot.</p>
+<p><b>Fortify past about 17% and flor dies.</b> Now nothing stands between the wine and the air. It browns and slowly concentrates as water evaporates through the wood, and develops the flavors of walnut, toffee, dried fruit and spice. This is <b>oxidative aging</b>, and it makes <b>Oloroso</b>. <b>Amontillado</b> starts under flor and finishes oxidatively, and Palo Cortado sits between.</p>
+<p>The same split explains Port. <b>Ruby</b> styles and Vintage Port are kept from air, in large vats and then bottle, to preserve dark fruit. <b>Tawny</b> is aged for years in small casks, where air turns it amber and nutty. It explains the two families of French fortified wine as well. Full details are in the Iberia unit.</p>
+<p>One compound links many of these wines. Sotolon, which smells of walnut, curry and maple syrup, forms under flor, in oxidative aging, in heated wine and in botrytized grapes. It is the reason an old Tawny, an Oloroso, a Madeira, a Vin Jaune and an old Sauternes can share a family resemblance despite being made in entirely different ways.</p>
+
+<h3>Madeira's heat</h3>
+<p>Madeira adds a third force, heat. Casks shipped through the tropics in the 1700s came back improved, and the island learned to imitate the voyage. In <b>estufagem</b>, used for everyday wines, tanks are warmed to about 113 to 122°F (45 to 50°C) for at least 3 months. In <b>canteiro</b>, used for the best, casks rest for years in warm lofts under the roof.</p>
+<p>Heat drives the browning reactions between sugars and amino acids that also color a crust of bread, and breaks sugar down into caramel-scented compounds. The wine gains burnt sugar, toffee, coffee and dried citrus peel. Chemists can measure the heating: the caramel compounds are far higher in tank-heated wine than in cask-aged wine, and climb steeply if the tank is run too hot, which is why the temperature is regulated. Having already been heated and oxidized for years, and having very high acidity, Madeira has nothing left to lose. It is nearly indestructible: an opened bottle lasts months, and wines two centuries old are still alive.</p>
+<p>Madeira's four noble grapes run from dry to sweet: <b>Sercial, Verdelho, Boal, Malmsey</b>. The drier styles are fortified later in fermentation and the sweeter earlier. Most everyday Madeira is Tinta Negra.</p>
+
 <h3>The fortified map</h3>
-<table class="t"><tr><th>Wine</th><th>Home</th><th>Fortified</th><th>Strength</th><th>Style</th></tr>
+<table><tr><th>Wine</th><th>Home</th><th>Fortified</th><th>Strength</th><th>Style</th></tr>
 <tr><td>Port</td><td>Douro, Portugal</td><td>During fermentation</td><td>19 to 22%</td><td>Sweet; ruby (fruit) or tawny (wood-aged)</td></tr>
 <tr><td>Sherry</td><td>Jerez, Spain</td><td>After fermentation</td><td>15 to 22%</td><td>Dry by nature; sweetened styles exist</td></tr>
 <tr><td>Madeira</td><td>Madeira, Portugal</td><td>During or after, by style</td><td>17 to 22%</td><td>Dry to sweet; heated and oxidized; very high acid</td></tr>
 <tr><td>Marsala</td><td>Sicily</td><td>After</td><td>17 to 18% or more</td><td>Dry to sweet; oro, ambra, rubino</td></tr>
 <tr><td>Vins Doux Naturels</td><td>Southern France</td><td>During</td><td>15 to 18%</td><td>Sweet Muscat or Grenache</td></tr>
 <tr><td>Rutherglen Muscat</td><td>Victoria, Australia</td><td>During, very early</td><td>17 to 18%</td><td>Luscious, raisined, long wood age</td></tr></table>
-<p>Madeira's four noble grapes run from dry to sweet: <b>Sercial, Verdelho, Boal, Malmsey</b>. Most everyday Madeira is Tinta Negra.</p>
+
+<h3>Telling the methods apart in the glass</h3>
+<table><tr><th>Method</th><th>Signature</th></tr>
+<tr><td>Noble rot</td><td>Honey, apricot, marmalade, saffron, ginger; a thick, glycerol-rich texture</td></tr>
+<tr><td>Late harvest</td><td>Ripe and dried stone fruit, less honeyed, lighter</td></tr>
+<tr><td>Icewine</td><td>Very pure fruit (peach, pineapple, lychee) with piercing acidity and no botrytis notes</td></tr>
+<tr><td>Drying (passito)</td><td>Raisin, fig, dried apricot, caramel; often amber</td></tr>
+<tr><td>Fortified during fermentation</td><td>Fresh grape sweetness with the warmth of spirit</td></tr></table>
+<p>Work through it in order. Is there the heat of spirit? Then the wine is fortified, and color and nuttiness tell you whether it aged with air or without. If not, how was the sugar concentrated? Honey and saffron with an oily texture mean a fungus was at work. Pure fruit with searing acid means ice. Raisin and fig mean drying. Low alcohol with fresh grape flavor means a fermentation simply stopped, as in Moscato d'Asti. Each conclusion follows from what the method does to the grape.</p>
+
 <h3>Serving them</h3>
 <ul><li><b>Pour:</b> 2 to 3 oz, in a small white-wine glass, not a thimble.</li>
 <li><b>Temperature:</b> sweet whites and Fino well chilled; Tawny lightly chilled; Vintage Port at cool room temperature.</li>
-<li><b>Once opened:</b> Fino and Manzanilla last days; Vintage Port a day or two; LBV and Tawny some weeks; Madeira months.</li>
-<li><b>With food:</b> the wine must be sweeter than the dish, and salt is its best friend: blue cheese, foie gras, salted nuts.</li></ul>`,
+<li><b>Once opened:</b> Fino and Manzanilla last days, because the flor that protected them is gone; Vintage Port a day or two; LBV and Tawny some weeks; Madeira months. The more oxygen a wine has already met, the less a little more can harm it.</li>
+<li><b>With food:</b> the wine must be sweeter than the dish, and salt is its best friend: blue cheese, foie gras, salted nuts.</li></ul>
+`,
 floor:`<p>Fortified service: Port and Madeira are stored upright; vintage Port needs decanting. Fortified and dessert wines are a common CMS pairing and upselling topic: blue cheese and Sauternes or Port, chocolate and Banyuls or Maury.</p>`,
 analyst:`<p>WSET Level 3 LO4 covers Port, Sherry, Muscat de Beaumes-de-Venise and Rutherglen Muscat. Madeira, Marsala and other VDNs are Diploma (D5) material. Fortified wines use their own alcohol scale on the SAT.</p>`,
 terms:[["Süssreserve","Unfermented grape juice added for sweetness (Germany)."],["Passito","Wine from dried grapes (Italy)."],["Flor","Yeast film protecting Sherry from oxygen during biological aging."],["Estufagem","Heating Madeira in tanks."],["Canteiro","Aging Madeira casks in warm lofts."],["Vin Doux Naturel","French fortified wine with spirit added during fermentation."],["Cryoextraction","Freezing picked grapes artificially to concentrate the juice."],["Eszencia","The free-run syrup of Tokaji aszú berries: 450 g/L of sugar or more."],["Malmsey","The sweetest of Madeira's noble grapes (Malvasia)."],["Sercial","The driest of Madeira's noble grapes."]],
