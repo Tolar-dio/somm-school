@@ -483,6 +483,41 @@
    "checked": "2026-11-13",
    "months": 36,
    "source": "https://www.jura-vins.com/medias/Infographie_Vignoble_Jura_2024_VF.pdf"
+  },
+  {
+   "lesson": "r5",
+   "text": "about 60,000 hectares under appellation in 2025, down from 66,600 five years earlier",
+   "checked": "2026-11-13",
+   "months": 18,
+   "source": "https://www.vins-rhone.com/sites/vignoble/files/documentation/2026-05/INTER-RHONE-CHIFFRES-CLES-2025-FR.pdf"
+  },
+  {
+   "lesson": "r5",
+   "text": "There are eighteen in the valley",
+   "checked": "2026-11-13",
+   "months": 36,
+   "source": "https://www.vins-rhone.com/sites/vignoble/files/documentation/2026-04/INTER-RHONE-ENCYCLOPEDIE-2026-EN-BAT_0.pdf"
+  },
+  {
+   "lesson": "r5",
+   "text": "About nine bottles in ten are rosé",
+   "checked": "2026-11-13",
+   "months": 24,
+   "source": "https://www.vinsdeprovence.com/files/19a1acb2/brochure_chiffres_cles_2025_fr.pdf"
+  },
+  {
+   "lesson": "r5d",
+   "text": "In 2024 exports were 434,000 hectoliters worth 353 million euros",
+   "checked": "2026-11-13",
+   "months": 18,
+   "source": "https://www.vinsdeprovence.com/files/ac41c296/chiffres_cles_2024_hd.pdf"
+  },
+  {
+   "lesson": "r5b",
+   "text": "now farming about 5,300 hectares",
+   "checked": "2026-11-13",
+   "months": 36,
+   "source": "https://www.grapeguru.de/en/knowledge/wineries/plaimont"
   }
  ]
 }
