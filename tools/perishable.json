@@ -637,6 +637,20 @@
    "checked": "2026-11-13",
    "months": 4,
    "source": "https://www.inao.gouv.fr/en/cnaov-return-june-17-18-2026"
+  },
+  {
+   "lesson": "v4",
+   "text": "about 227 million hectoliters",
+   "checked": "2026-11-13",
+   "months": 12,
+   "source": "https://www.oiv.int/sites/default/files/documents/OIV-State_of_the_World_Wine_Sector_in_2025.pdf"
+  },
+  {
+   "lesson": "h4",
+   "text": "France's total, about 36 million hectoliters",
+   "checked": "2026-11-13",
+   "months": 12,
+   "source": "https://agreste.agriculture.gouv.fr/agreste-web/download/publication/publie/IraVit25144/2025_144inforapviticulture.pdf"
   }
  ]
 }
