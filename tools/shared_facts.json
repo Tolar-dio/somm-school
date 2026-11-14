@@ -32,7 +32,7 @@
   },
   {
    "fact": "Chianti Classico minimum Sangiovese",
-   "pattern": "Gallo Nero\\)\\. At least (\\d+)% Sangiovese|Chianti Classico[^.]{0,60}?at least (\\d+)% Sangiovese",
+   "pattern": "Gallo Nero\\)\\. At least (\\d+)% Sangiovese|Chianti Classico(?!'s Gran Selezione| Gran Selezione)[^.]{0,60}?at least (\\d+)% Sangiovese",
    "expect": [
     "80"
    ]
