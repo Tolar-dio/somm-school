@@ -15,7 +15,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-COUNTRIES = ["fr", "it", "es", "pt", "us"]
+COUNTRIES = ["fr", "it", "es", "pt", "us", "de", "at", "hu", "md", "au", "nz", "ar", "cl", "ca", "za"]
 KEEP = ["name", "cat", "subcat", "region", "subregion", "created", "area_ha", "styles", "grapes", "summary",
         "terroir", "producers", "nerd_note", "contains", "parent", "village", "classification"]
 
@@ -46,6 +46,9 @@ def main():
         full = full_ids(cc)
         items = {}
         for pid, p in d["profiles"].items():
+            p = dict(p)
+            if not p.get("region"):
+                p["region"] = "National and multi-region"
             it = {k: p[k] for k in KEEP if k in p and p[k] not in (None, "", [])}
             it["rslug"] = slug(p["region"])
             items[pid] = it
