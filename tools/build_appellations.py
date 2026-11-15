@@ -15,7 +15,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-COUNTRIES = ["fr", "it", "es", "pt", "us", "de", "at", "hu", "md", "au", "nz", "ar", "cl", "ca", "za", "gr", "ge", "ch", "uy", "ro", "bg", "si", "hr", "cz", "sk", "rs", "gb", "cy", "br", "jp", "cn", "mx", "lu", "mt", "be", "nl"]
+COUNTRIES = ["fr", "it", "es", "pt", "us", "de", "at", "hu", "md", "au", "nz", "ar", "cl", "ca", "za", "gr", "ge", "ch", "uy", "ro", "bg", "si", "hr", "cz", "sk", "rs", "gb", "cy", "br", "jp", "cn", "mx", "lu", "mt", "be", "nl", "il", "lb", "tr", "am", "ua", "ru", "pl", "ba", "th", "se", "cv", "xk", "al", "ma", "dz", "tn", "dk", "pe", "bo", "me", "mk", "in"]
 KEEP = ["name", "cat", "subcat", "region", "subregion", "created", "area_ha", "styles", "grapes", "summary",
         "terroir", "producers", "nerd_note", "contains", "parent", "village", "classification"]
 
